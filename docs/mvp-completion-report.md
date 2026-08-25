@@ -51,6 +51,7 @@ Yes, locally on this Windows checkout:
 - Negative corpus: ALT `UNSUPPORTED`, CPI provenance `UNSUPPORTED`.
 - Rust workspace tests/build: passed with the pinned MSVC toolchain.
 - `npm run test:ci`: passed when invoked through the valid Node/npm installation.
+- Clean-clone verification: commit `ffbd0b3` cloned into an empty Windows directory, `npm ci` completed with zero reported vulnerabilities, the Rust backend built from an empty `target/` in 9m59s, all 19 tests and five corpus gates passed, and the clone remained clean.
 
 The global `npm` shim on this machine points to a missing roaming npm module. This is an environment-path defect, not a repository failure; invoking `C:\Program Files\nodejs\node.exe` with the installed npm CLI succeeds.
 
@@ -67,7 +68,7 @@ Yes locally. Each example contains its mainnet signature, explanation, Bundle v0
 - Standard RPC cannot return arbitrary account bytes at an original slot.
 - Historical feature activation, sysvars, program deployments, and validator binary are not generally reconstructed.
 - Archive-provider and production snapshot parsers are architectural follow-ons, not MVP integrations.
-- Cross-platform behavior has not yet been observed from a remote clean clone.
+- A clean Windows clone is proven; Linux behavior still awaits the remote GitHub Actions run.
 - Bundle hashes provide integrity, not creator authentication.
 - The public benchmark is three supported examples, not a coverage-rate claim.
 

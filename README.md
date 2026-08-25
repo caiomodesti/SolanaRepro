@@ -33,6 +33,8 @@ The MVP does not support universal DeFi, complex CPI, ALT reconstruction, Token-
 
 Requirements: Node.js 22+, Rust stable, and a native build toolchain. Windows builds of the pinned Rust graph also require Perl.
 
+The first native Windows build compiles vendored OpenSSL and took approximately ten minutes in the recorded clean-clone test; cached builds are much faster.
+
 ```bash
 npm ci --ignore-scripts
 cargo build --locked -p repro-replay
