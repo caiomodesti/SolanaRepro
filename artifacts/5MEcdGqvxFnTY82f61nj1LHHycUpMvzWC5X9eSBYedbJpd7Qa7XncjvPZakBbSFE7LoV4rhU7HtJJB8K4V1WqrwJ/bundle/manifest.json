@@ -110,6 +110,15 @@
     "CURRENT_ONLY": 51,
     "UNKNOWN": 2
   },
+  "stateProvider": {
+    "name": "standard-rpc",
+    "capabilities": {
+      "transactionHistory": true,
+      "arbitraryHistoricalAccountState": false,
+      "historicalProgramBytes": false
+    },
+    "legacyCapture": true
+  },
   "runtime": {
     "backend": "LiteSVM",
     "version": "0.15.2",
@@ -191,10 +200,6 @@
       "accounts/pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ.json": "5278d0d16aa54a1eae390525d2ae12c7b504125cde1b1ada04b52f24e561efc3",
       "accounts/qhJ7kLjrE68sbDF11CpwMt3P9rqiwZtretM5ZzeAX6o.json": "1e2e61e92d4e40cd117bd1f1b786ac97749b4b599da680fb1fb8d9f045028c43",
       "expected.json": "4111bab34011cb2e563d79936bc4d781fcc02aebdc8be386f6958903f37c0f23",
-      "lookup-tables/13421UsXVmozpczk5UZVRHQgo5e5Sv9m76cVevRMbxtB.json": "2bb6fcbd94b0c8f7ea6e0b929bea8f39e0f0b7cd877966187e8c0435738d1113",
-      "lookup-tables/5DLHwUSUpEBbWVieUmRRWNe3Eyvh895mf5MGkxZtYAvL.json": "660d612618009d1748e693cf6303e9948403bb229e948df2cbcc5b7eb90c2f81",
-      "lookup-tables/5P4vrgZQDUSputnUnrsGVjbX7maNufsjQnHqbQxiMH2n.json": "56a1e23cc32cbcd213a342e942353621737323bd1711c1a11b121c3b52b6a54f",
-      "lookup-tables/9TuXHSVtMVhARaTgJBHd3hBVpKW1jyUKVMWmW2Y6xv8M.json": "62e073a25e1bccf522e9257b0e6c3c61de7f6f25b24098789113405bccb02f66",
       "lookup-tables/index.json": "3a1491eb8216e73db1760bbf10ee5556f354bf3a5116b514572a997c4d72e007",
       "metadata.json": "486b69f2b1e01cb6be6b25ce15321b85c8c2bc98a28854cd0d0d7091f6e41de9",
       "original-execution.json": "7fec1cbd6c25b05831d703b26ac71549309b4cbaa7a601eea58b164b71b763fc",
@@ -202,6 +207,6 @@
       "provenance.json": "62a52ecf958e0d3fa58d60fa588be5e513c23534e696a3fa450b40b5c346e4b6",
       "transaction.json": "1ae2726a870bc9c05d0a5bc87ce3fc85b4503a02837dd0639b65a95ee9022aac"
     },
-    "manifestCoreSha256": "f45291fb4d94b9ba29648a4eeb95d6bea6f3225dd70732256ada2997e2927a41"
+    "manifestCoreSha256": "f70169d57d43a1ddaeff82f228f339d86681d1e239b66debac42f3d7ff239f8a"
   }
 }
