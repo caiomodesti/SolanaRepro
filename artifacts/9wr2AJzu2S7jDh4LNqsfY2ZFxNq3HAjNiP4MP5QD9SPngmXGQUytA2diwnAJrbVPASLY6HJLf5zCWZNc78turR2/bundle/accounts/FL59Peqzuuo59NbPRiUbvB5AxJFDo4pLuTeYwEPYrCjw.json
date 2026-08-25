@@ -1,0 +1,21 @@
+{
+  "pubkey": "FL59Peqzuuo59NbPRiUbvB5AxJFDo4pLuTeYwEPYrCjw",
+  "originalIndex": 7,
+  "role": {
+    "index": 7,
+    "pubkey": "FL59Peqzuuo59NbPRiUbvB5AxJFDo4pLuTeYwEPYrCjw",
+    "source": "static",
+    "signer": false,
+    "writable": false
+  },
+  "replayUse": true,
+  "confidence": "EXACT_FOR_SYSTEM_EMPTY_DATA",
+  "preState": {
+    "lamports": 10498602405,
+    "dataBase64": "",
+    "owner": "11111111111111111111111111111111",
+    "executable": false,
+    "rentEpoch": 0
+  },
+  "limitations": []
+}

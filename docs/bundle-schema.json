@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://solanarepro.dev/schema/bundle-manifest-0.1.json",
+  "title": "SolanaRepro Bundle Manifest v0.1",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["schemaVersion", "toolVersion", "cluster", "signature", "slot", "transactionClass", "eligibility", "eligibilityReasons", "stateProvenance", "runtime", "featureSet", "integrity"],
+  "properties": {
+    "schemaVersion": { "const": "0.1" },
+    "toolVersion": { "type": "string" },
+    "cluster": { "const": "mainnet-beta" },
+    "signature": { "type": "string", "minLength": 64, "maxLength": 88 },
+    "slot": { "type": "integer", "minimum": 0 },
+    "transactionClass": { "enum": ["SYSTEM_TRANSFER", "CLASSIC_SPL_TRANSFER", "SUPPORTED_DETERMINISTIC_FAILURE", "UNSUPPORTED_TRANSACTION_CLASS"] },
+    "eligibility": { "enum": ["SUPPORTED", "UNSUPPORTED"] },
+    "eligibilityReasons": { "type": "array", "items": { "type": "object", "required": ["code", "message"] } },
+    "stateProvenance": { "type": "object", "required": ["PROVEN", "INFERRED", "CURRENT_ONLY", "UNKNOWN"] },
+    "runtime": {
+      "type": "object",
+      "required": ["backend", "version", "agave"],
+      "properties": { "backend": { "const": "LiteSVM" }, "version": { "const": "0.15.2" }, "agave": { "const": "4.1.1" } }
+    },
+    "integrity": {
+      "type": "object",
+      "required": ["algorithm", "manifestCoreSha256", "files"],
+      "properties": {
+        "algorithm": { "const": "sha256" },
+        "manifestCoreSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "files": { "type": "object", "additionalProperties": { "type": "string", "pattern": "^[0-9a-f]{64}$" } }
+      }
+    }
+  }
+}

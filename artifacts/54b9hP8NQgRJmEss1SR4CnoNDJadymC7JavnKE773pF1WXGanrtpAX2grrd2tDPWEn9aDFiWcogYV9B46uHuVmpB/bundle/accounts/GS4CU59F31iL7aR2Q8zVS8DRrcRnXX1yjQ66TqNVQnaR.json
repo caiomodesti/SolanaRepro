@@ -1,0 +1,27 @@
+{
+  "pubkey": "GS4CU59F31iL7aR2Q8zVS8DRrcRnXX1yjQ66TqNVQnaR",
+  "originalIndex": 19,
+  "role": {
+    "index": 19,
+    "pubkey": "GS4CU59F31iL7aR2Q8zVS8DRrcRnXX1yjQ66TqNVQnaR",
+    "source": "static",
+    "signer": false,
+    "writable": false
+  },
+  "relevant": true,
+  "replayUse": true,
+  "preState": {
+    "lamports": 4641093,
+    "dataBase64": "",
+    "owner": "11111111111111111111111111111111",
+    "executable": false,
+    "rentEpoch": 0
+  },
+  "limitations": [],
+  "source": "transaction_metadata",
+  "provenance": "PROVEN",
+  "evidence": [
+    "pre-transaction lamports come from getTransaction",
+    "System account data is structurally empty"
+  ]
+}

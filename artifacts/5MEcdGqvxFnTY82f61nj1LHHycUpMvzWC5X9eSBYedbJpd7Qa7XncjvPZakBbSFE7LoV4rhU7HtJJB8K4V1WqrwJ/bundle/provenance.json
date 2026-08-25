@@ -1,0 +1,1394 @@
+{
+  "originalSlot": 441308645,
+  "policy": "CURRENT_ONLY and UNKNOWN relevant inputs make a bundle UNSUPPORTED",
+  "summary": {
+    "PROVEN": 8,
+    "INFERRED": 0,
+    "CURRENT_ONLY": 51,
+    "UNKNOWN": 2
+  },
+  "accounts": [
+    {
+      "pubkey": "Fv7samyLm14Fg7jbpcNCtA2WpHygT4vUDH3QsM5cv2Th",
+      "originalIndex": 0,
+      "role": {
+        "index": 0,
+        "pubkey": "Fv7samyLm14Fg7jbpcNCtA2WpHygT4vUDH3QsM5cv2Th",
+        "source": "static",
+        "signer": true,
+        "writable": true
+      },
+      "source": "transaction_metadata",
+      "provenance": "PROVEN",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "pre-transaction lamports come from getTransaction",
+        "System account data is structurally empty"
+      ],
+      "limitations": []
+    },
+    {
+      "pubkey": "ojdNccFWWWoAuXAjBk7JyumefyrSEt5PLs3KgLwdrGu",
+      "originalIndex": 1,
+      "role": {
+        "index": 1,
+        "pubkey": "ojdNccFWWWoAuXAjBk7JyumefyrSEt5PLs3KgLwdrGu",
+        "source": "static",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "2HRj9M3dXznabdungPjbtuof21QmDhBxxBGL7kvvVcWX",
+      "originalIndex": 2,
+      "role": {
+        "index": 2,
+        "pubkey": "2HRj9M3dXznabdungPjbtuof21QmDhBxxBGL7kvvVcWX",
+        "source": "static",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "3AVi9Tg9Uo68tJfuvoKvqKNWKkC5wPdSSdeBnizKZ6jT",
+      "originalIndex": 3,
+      "role": {
+        "index": 3,
+        "pubkey": "3AVi9Tg9Uo68tJfuvoKvqKNWKkC5wPdSSdeBnizKZ6jT",
+        "source": "static",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "3Tf26g8rEZAtkN9C6Abgxk4XWqGTpqjSZQ6WC8DXvp48",
+      "originalIndex": 4,
+      "role": {
+        "index": 4,
+        "pubkey": "3Tf26g8rEZAtkN9C6Abgxk4XWqGTpqjSZQ6WC8DXvp48",
+        "source": "static",
+        "signer": false,
+        "writable": true
+      },
+      "source": "unavailable",
+      "provenance": "UNKNOWN",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [],
+      "limitations": [
+        "account is closed or unavailable and full historical bytes were not recovered"
+      ]
+    },
+    {
+      "pubkey": "3fAo2wmXaGkwSUfRjfKSwT3WjkrkfbYNZ13qGJatFejn",
+      "originalIndex": 5,
+      "role": {
+        "index": 5,
+        "pubkey": "3fAo2wmXaGkwSUfRjfKSwT3WjkrkfbYNZ13qGJatFejn",
+        "source": "static",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "6dVwpapuAWBZtaiT6asXbksYAD62EsuceYxFYBuEwqSm",
+      "originalIndex": 6,
+      "role": {
+        "index": 6,
+        "pubkey": "6dVwpapuAWBZtaiT6asXbksYAD62EsuceYxFYBuEwqSm",
+        "source": "static",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "78JekrQc3g9KKkipwEeG6kV4Epq573R3Pd6GDE4Xz9Hv",
+      "originalIndex": 7,
+      "role": {
+        "index": 7,
+        "pubkey": "78JekrQc3g9KKkipwEeG6kV4Epq573R3Pd6GDE4Xz9Hv",
+        "source": "static",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "89a8fwnhR3p35VAsgDJD7zi3xWZqXUK1iqXQVJEHAmV1",
+      "originalIndex": 8,
+      "role": {
+        "index": 8,
+        "pubkey": "89a8fwnhR3p35VAsgDJD7zi3xWZqXUK1iqXQVJEHAmV1",
+        "source": "static",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "93sDRHSvMbEoGRSnxVhurp9Cvf6Fb22tS2uYv4ddTCNv",
+      "originalIndex": 9,
+      "role": {
+        "index": 9,
+        "pubkey": "93sDRHSvMbEoGRSnxVhurp9Cvf6Fb22tS2uYv4ddTCNv",
+        "source": "static",
+        "signer": false,
+        "writable": true
+      },
+      "source": "unavailable",
+      "provenance": "UNKNOWN",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [],
+      "limitations": [
+        "account is closed or unavailable and full historical bytes were not recovered"
+      ]
+    },
+    {
+      "pubkey": "A6gom9Cu7xL7PkDf7yPX6NsMZwQr6cCDo7ufKGKGDoSg",
+      "originalIndex": 10,
+      "role": {
+        "index": 10,
+        "pubkey": "A6gom9Cu7xL7PkDf7yPX6NsMZwQr6cCDo7ufKGKGDoSg",
+        "source": "static",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "CQ7GyroB4YC9dUTxDc8qqvpCyNX1GNh1NUnM2RERJ3ro",
+      "originalIndex": 11,
+      "role": {
+        "index": 11,
+        "pubkey": "CQ7GyroB4YC9dUTxDc8qqvpCyNX1GNh1NUnM2RERJ3ro",
+        "source": "static",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "EPZxjPHEsS3WrgoH7hYi1aaffx8HhjkJEd5gUXDKfXN6",
+      "originalIndex": 12,
+      "role": {
+        "index": 12,
+        "pubkey": "EPZxjPHEsS3WrgoH7hYi1aaffx8HhjkJEd5gUXDKfXN6",
+        "source": "static",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "GA16RLe3an4ASqpviYpiDHEGEvZcLPAkXm12G9PbD6eh",
+      "originalIndex": 13,
+      "role": {
+        "index": 13,
+        "pubkey": "GA16RLe3an4ASqpviYpiDHEGEvZcLPAkXm12G9PbD6eh",
+        "source": "static",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "GrWWfxBbNQxCf4PAvaji8HjksaVtX32yn8HgjWwY8yX7",
+      "originalIndex": 14,
+      "role": {
+        "index": 14,
+        "pubkey": "GrWWfxBbNQxCf4PAvaji8HjksaVtX32yn8HgjWwY8yX7",
+        "source": "static",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "11111111111111111111111111111111",
+      "originalIndex": 15,
+      "role": {
+        "index": 15,
+        "pubkey": "11111111111111111111111111111111",
+        "source": "static",
+        "signer": false,
+        "writable": false
+      },
+      "source": "pinned_runtime",
+      "provenance": "PROVEN",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "program id is supplied by the pinned LiteSVM runtime"
+      ],
+      "limitations": []
+    },
+    {
+      "pubkey": "ComputeBudget111111111111111111111111111111",
+      "originalIndex": 16,
+      "role": {
+        "index": 16,
+        "pubkey": "ComputeBudget111111111111111111111111111111",
+        "source": "static",
+        "signer": false,
+        "writable": false
+      },
+      "source": "pinned_runtime",
+      "provenance": "PROVEN",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "program id is supplied by the pinned LiteSVM runtime"
+      ],
+      "limitations": []
+    },
+    {
+      "pubkey": "6q2KpcrHUEKbBaDqEiGXfoF89qBJX3X3bZNMSqRTEPhU",
+      "originalIndex": 17,
+      "role": {
+        "index": 17,
+        "pubkey": "6q2KpcrHUEKbBaDqEiGXfoF89qBJX3X3bZNMSqRTEPhU",
+        "source": "static",
+        "signer": false,
+        "writable": false
+      },
+      "source": "transaction_metadata",
+      "provenance": "PROVEN",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "zero pre-balance and absent account are recorded by the transaction/current observation"
+      ],
+      "limitations": []
+    },
+    {
+      "pubkey": "728NaqH5gLNLZ9VGR5iZ8dmnTeCyxnEwgGL5cAB1KTDs",
+      "originalIndex": 18,
+      "role": {
+        "index": 18,
+        "pubkey": "728NaqH5gLNLZ9VGR5iZ8dmnTeCyxnEwgGL5cAB1KTDs",
+        "source": "static",
+        "signer": false,
+        "writable": false
+      },
+      "source": "transaction_metadata",
+      "provenance": "PROVEN",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "zero pre-balance and absent account are recorded by the transaction/current observation"
+      ],
+      "limitations": []
+    },
+    {
+      "pubkey": "8GCr9711iFUmGdW4vPGoBYHoLEACKHKY8aycYNuxViXk",
+      "originalIndex": 19,
+      "role": {
+        "index": 19,
+        "pubkey": "8GCr9711iFUmGdW4vPGoBYHoLEACKHKY8aycYNuxViXk",
+        "source": "static",
+        "signer": false,
+        "writable": false
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "ghSBUgyxyvyurm1vJBkU4rUyLJoUipCZhFeiBogKCSy",
+      "originalIndex": 20,
+      "role": {
+        "index": 20,
+        "pubkey": "ghSBUgyxyvyurm1vJBkU4rUyLJoUipCZhFeiBogKCSy",
+        "source": "lookup-writable",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "3FJcBrWULwgHxRfatfweWrqXosNaHEoQLeZkF14DsULu",
+      "originalIndex": 21,
+      "role": {
+        "index": 21,
+        "pubkey": "3FJcBrWULwgHxRfatfweWrqXosNaHEoQLeZkF14DsULu",
+        "source": "lookup-writable",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "94qWNrtmfn42h3ZjUZwWvK1MEo9uVmmrBPd2hpNjYDjb",
+      "originalIndex": 22,
+      "role": {
+        "index": 22,
+        "pubkey": "94qWNrtmfn42h3ZjUZwWvK1MEo9uVmmrBPd2hpNjYDjb",
+        "source": "lookup-writable",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "AyC2GRoQApRdZ8dQEyDv5Di2kdTZqUwYqsuW6qxLWBtD",
+      "originalIndex": 23,
+      "role": {
+        "index": 23,
+        "pubkey": "AyC2GRoQApRdZ8dQEyDv5Di2kdTZqUwYqsuW6qxLWBtD",
+        "source": "lookup-writable",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "CA7v8gHfbquYXyDnDx6QxWW8hmL1H7X6Y2RYDrGLnuck",
+      "originalIndex": 24,
+      "role": {
+        "index": 24,
+        "pubkey": "CA7v8gHfbquYXyDnDx6QxWW8hmL1H7X6Y2RYDrGLnuck",
+        "source": "lookup-writable",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "E1SvzUxEYWfE2NLZBMbNbEqxCWHBb8sfUNoTgPx93yro",
+      "originalIndex": 25,
+      "role": {
+        "index": 25,
+        "pubkey": "E1SvzUxEYWfE2NLZBMbNbEqxCWHBb8sfUNoTgPx93yro",
+        "source": "lookup-writable",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "FzH65994brAkqt2UrwMsovSTPAoXHmoSiQkpoNhWCqZV",
+      "originalIndex": 26,
+      "role": {
+        "index": 26,
+        "pubkey": "FzH65994brAkqt2UrwMsovSTPAoXHmoSiQkpoNhWCqZV",
+        "source": "lookup-writable",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "4ezG1FgUrxDcpoQ2ZX6gfQoBWCGLAAd9inFinwvK4f2R",
+      "originalIndex": 27,
+      "role": {
+        "index": 27,
+        "pubkey": "4ezG1FgUrxDcpoQ2ZX6gfQoBWCGLAAd9inFinwvK4f2R",
+        "source": "lookup-writable",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "8ktMHvFCSq1JK7jBCQyojN29qkvMc7MaGKAT7PkvSKsS",
+      "originalIndex": 28,
+      "role": {
+        "index": 28,
+        "pubkey": "8ktMHvFCSq1JK7jBCQyojN29qkvMc7MaGKAT7PkvSKsS",
+        "source": "lookup-writable",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "HMzvsEEmtzHhvZNw9uwbaG85HCTmFnkbhzUx16cy7ca3",
+      "originalIndex": 29,
+      "role": {
+        "index": 29,
+        "pubkey": "HMzvsEEmtzHhvZNw9uwbaG85HCTmFnkbhzUx16cy7ca3",
+        "source": "lookup-writable",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "qhJ7kLjrE68sbDF11CpwMt3P9rqiwZtretM5ZzeAX6o",
+      "originalIndex": 30,
+      "role": {
+        "index": 30,
+        "pubkey": "qhJ7kLjrE68sbDF11CpwMt3P9rqiwZtretM5ZzeAX6o",
+        "source": "lookup-writable",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "6V9njnehkfaoxUaoFPfBNfzS3DpqTfYLcuYFMAk7cNAZ",
+      "originalIndex": 31,
+      "role": {
+        "index": 31,
+        "pubkey": "6V9njnehkfaoxUaoFPfBNfzS3DpqTfYLcuYFMAk7cNAZ",
+        "source": "lookup-writable",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "6Y9P6eMsZVWer6hiR1b2hdUywhcxKn3oYbiVCMJSQgaG",
+      "originalIndex": 32,
+      "role": {
+        "index": 32,
+        "pubkey": "6Y9P6eMsZVWer6hiR1b2hdUywhcxKn3oYbiVCMJSQgaG",
+        "source": "lookup-writable",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "FZHyt9SnAbrmoCuRtawmxY7oWsYAVaDbHA9zwsppy32c",
+      "originalIndex": 33,
+      "role": {
+        "index": 33,
+        "pubkey": "FZHyt9SnAbrmoCuRtawmxY7oWsYAVaDbHA9zwsppy32c",
+        "source": "lookup-writable",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "jyRYT9FBYZKEJ3o8Dfk1B9oA5Ah6aJe2nQe7nx9v6cf",
+      "originalIndex": 34,
+      "role": {
+        "index": 34,
+        "pubkey": "jyRYT9FBYZKEJ3o8Dfk1B9oA5Ah6aJe2nQe7nx9v6cf",
+        "source": "lookup-writable",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "27HFMsSEzvMByUtHGW3pPtrW4YvZPyytedA1hfhCte7d",
+      "originalIndex": 35,
+      "role": {
+        "index": 35,
+        "pubkey": "27HFMsSEzvMByUtHGW3pPtrW4YvZPyytedA1hfhCte7d",
+        "source": "lookup-writable",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "4gBaHMTWdp9X5q6H95bE84Rw5XD9gmZgaQU69wafgK3g",
+      "originalIndex": 36,
+      "role": {
+        "index": 36,
+        "pubkey": "4gBaHMTWdp9X5q6H95bE84Rw5XD9gmZgaQU69wafgK3g",
+        "source": "lookup-writable",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "5ha7nG6X4qTKBCveD9PRmaVzVFBtmkknTksk7i24vHh5",
+      "originalIndex": 37,
+      "role": {
+        "index": 37,
+        "pubkey": "5ha7nG6X4qTKBCveD9PRmaVzVFBtmkknTksk7i24vHh5",
+        "source": "lookup-writable",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "6w94mKJbM8GwKnbTZLcnpxS8BK12giE8tWtkH49nG3Ps",
+      "originalIndex": 38,
+      "role": {
+        "index": 38,
+        "pubkey": "6w94mKJbM8GwKnbTZLcnpxS8BK12giE8tWtkH49nG3Ps",
+        "source": "lookup-writable",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "7EJqZHD4TTk8B9BCjUwLtfssGbxiDAsrbFHT8YWgrE7U",
+      "originalIndex": 39,
+      "role": {
+        "index": 39,
+        "pubkey": "7EJqZHD4TTk8B9BCjUwLtfssGbxiDAsrbFHT8YWgrE7U",
+        "source": "lookup-writable",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "7jv3KTpMKEa8VVJfajRoK8CNH2LCPXnCXsVqgHAZTDu7",
+      "originalIndex": 40,
+      "role": {
+        "index": 40,
+        "pubkey": "7jv3KTpMKEa8VVJfajRoK8CNH2LCPXnCXsVqgHAZTDu7",
+        "source": "lookup-writable",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "CNRDeeQZghziszXgtABMufoM4YkQeLz31jnmENFZLPC2",
+      "originalIndex": 41,
+      "role": {
+        "index": 41,
+        "pubkey": "CNRDeeQZghziszXgtABMufoM4YkQeLz31jnmENFZLPC2",
+        "source": "lookup-writable",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "CcG3fyDZn6uXTV5p2TV9cceCA2YhE3bUMLeXGn6vZSNr",
+      "originalIndex": 42,
+      "role": {
+        "index": 42,
+        "pubkey": "CcG3fyDZn6uXTV5p2TV9cceCA2YhE3bUMLeXGn6vZSNr",
+        "source": "lookup-writable",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "EkkgMLrSN4KKKvFVoFe3u72vHJS9U58X3roRBjysSsEu",
+      "originalIndex": 43,
+      "role": {
+        "index": 43,
+        "pubkey": "EkkgMLrSN4KKKvFVoFe3u72vHJS9U58X3roRBjysSsEu",
+        "source": "lookup-writable",
+        "signer": false,
+        "writable": true
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+      "originalIndex": 44,
+      "role": {
+        "index": 44,
+        "pubkey": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+        "source": "lookup-readonly",
+        "signer": false,
+        "writable": false
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr",
+      "originalIndex": 45,
+      "role": {
+        "index": 45,
+        "pubkey": "MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr",
+        "source": "lookup-readonly",
+        "signer": false,
+        "writable": false
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "So11111111111111111111111111111111111111112",
+      "originalIndex": 46,
+      "role": {
+        "index": 46,
+        "pubkey": "So11111111111111111111111111111111111111112",
+        "source": "lookup-readonly",
+        "signer": false,
+        "writable": false
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "originalIndex": 47,
+      "role": {
+        "index": 47,
+        "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "source": "lookup-readonly",
+        "signer": false,
+        "writable": false
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "originalIndex": 48,
+      "role": {
+        "index": 48,
+        "pubkey": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "source": "lookup-readonly",
+        "signer": false,
+        "writable": false
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+      "originalIndex": 49,
+      "role": {
+        "index": 49,
+        "pubkey": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+        "source": "lookup-readonly",
+        "signer": false,
+        "writable": false
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ",
+      "originalIndex": 50,
+      "role": {
+        "index": 50,
+        "pubkey": "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ",
+        "source": "lookup-readonly",
+        "signer": false,
+        "writable": false
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "5PHirr8joyTMp9JMm6nW7hNDVyEYdkzDqazxPD7RaTjx",
+      "originalIndex": 51,
+      "role": {
+        "index": 51,
+        "pubkey": "5PHirr8joyTMp9JMm6nW7hNDVyEYdkzDqazxPD7RaTjx",
+        "source": "lookup-readonly",
+        "signer": false,
+        "writable": false
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "62qc2CNXwrYqQScmEdiZFFAnJR262PxWEuNQtxfafNgV",
+      "originalIndex": 52,
+      "role": {
+        "index": 52,
+        "pubkey": "62qc2CNXwrYqQScmEdiZFFAnJR262PxWEuNQtxfafNgV",
+        "source": "lookup-readonly",
+        "signer": false,
+        "writable": false
+      },
+      "source": "transaction_metadata",
+      "provenance": "PROVEN",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "pre-transaction lamports come from getTransaction",
+        "System account data is structurally empty"
+      ],
+      "limitations": []
+    },
+    {
+      "pubkey": "6AUH3WEHucYZyC61hqpqYUWVto5qA5hjHuNQ32GNnNxA",
+      "originalIndex": 53,
+      "role": {
+        "index": 53,
+        "pubkey": "6AUH3WEHucYZyC61hqpqYUWVto5qA5hjHuNQ32GNnNxA",
+        "source": "lookup-readonly",
+        "signer": false,
+        "writable": false
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "ADyA8hdefvWN2dbGGWFotbzWxrAvLW83WG6QCVXvJKqw",
+      "originalIndex": 54,
+      "role": {
+        "index": 54,
+        "pubkey": "ADyA8hdefvWN2dbGGWFotbzWxrAvLW83WG6QCVXvJKqw",
+        "source": "lookup-readonly",
+        "signer": false,
+        "writable": false
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+      "originalIndex": 55,
+      "role": {
+        "index": 55,
+        "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+        "source": "lookup-readonly",
+        "signer": false,
+        "writable": false
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "C2aFPdENg4A2HQsmrd5rTw5TaYBX5Ku887cWjbFKtZpw",
+      "originalIndex": 56,
+      "role": {
+        "index": 56,
+        "pubkey": "C2aFPdENg4A2HQsmrd5rTw5TaYBX5Ku887cWjbFKtZpw",
+        "source": "lookup-readonly",
+        "signer": false,
+        "writable": false
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "D1ZN9Wj1fRSUQfCjhvnu1hqDMT7hzjzBBpi12nVniYD6",
+      "originalIndex": 57,
+      "role": {
+        "index": 57,
+        "pubkey": "D1ZN9Wj1fRSUQfCjhvnu1hqDMT7hzjzBBpi12nVniYD6",
+        "source": "lookup-readonly",
+        "signer": false,
+        "writable": false
+      },
+      "source": "transaction_metadata",
+      "provenance": "PROVEN",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "pre-transaction lamports come from getTransaction",
+        "System account data is structurally empty"
+      ],
+      "limitations": []
+    },
+    {
+      "pubkey": "EHAAiTxcdDwQ3U4bU6YcMsQGaekdzLS3B5SmYo46kJtL",
+      "originalIndex": 58,
+      "role": {
+        "index": 58,
+        "pubkey": "EHAAiTxcdDwQ3U4bU6YcMsQGaekdzLS3B5SmYo46kJtL",
+        "source": "lookup-readonly",
+        "signer": false,
+        "writable": false
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    },
+    {
+      "pubkey": "GS4CU59F31iL7aR2Q8zVS8DRrcRnXX1yjQ66TqNVQnaR",
+      "originalIndex": 59,
+      "role": {
+        "index": 59,
+        "pubkey": "GS4CU59F31iL7aR2Q8zVS8DRrcRnXX1yjQ66TqNVQnaR",
+        "source": "lookup-readonly",
+        "signer": false,
+        "writable": false
+      },
+      "source": "transaction_metadata",
+      "provenance": "PROVEN",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "pre-transaction lamports come from getTransaction",
+        "System account data is structurally empty"
+      ],
+      "limitations": []
+    },
+    {
+      "pubkey": "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump",
+      "originalIndex": 60,
+      "role": {
+        "index": 60,
+        "pubkey": "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump",
+        "source": "lookup-readonly",
+        "signer": false,
+        "writable": false
+      },
+      "source": "current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "evidence": [
+        "account observed at current RPC context, not at original slot 441308645"
+      ],
+      "limitations": [
+        "current account bytes cannot be treated as historical pre-state"
+      ]
+    }
+  ],
+  "programs": [
+    {
+      "programId": "ComputeBudget111111111111111111111111111111",
+      "source": "pinned_runtime",
+      "provenance": "PROVEN",
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "limitation": null
+    },
+    {
+      "programId": "11111111111111111111111111111111",
+      "source": "pinned_runtime",
+      "provenance": "PROVEN",
+      "originalSlot": 441308645,
+      "capturedSlot": 441311467,
+      "limitation": null
+    },
+    {
+      "programId": "8GCr9711iFUmGdW4vPGoBYHoLEACKHKY8aycYNuxViXk",
+      "source": "current_rpc_programdata",
+      "provenance": "CURRENT_ONLY",
+      "originalSlot": 441308645,
+      "capturedSlot": 441311472,
+      "limitation": "program bytes are current-state bytes, not proven bytes at original slot"
+    }
+  ],
+  "lookupTables": [
+    {
+      "pubkey": "5DLHwUSUpEBbWVieUmRRWNe3Eyvh895mf5MGkxZtYAvL",
+      "source": "transaction_metadata_and_current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "originalSlot": 441308645,
+      "capturedSlot": null
+    },
+    {
+      "pubkey": "13421UsXVmozpczk5UZVRHQgo5e5Sv9m76cVevRMbxtB",
+      "source": "transaction_metadata_and_current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "originalSlot": 441308645,
+      "capturedSlot": null
+    },
+    {
+      "pubkey": "9TuXHSVtMVhARaTgJBHd3hBVpKW1jyUKVMWmW2Y6xv8M",
+      "source": "transaction_metadata_and_current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "originalSlot": 441308645,
+      "capturedSlot": null
+    },
+    {
+      "pubkey": "5P4vrgZQDUSputnUnrsGVjbX7maNufsjQnHqbQxiMH2n",
+      "source": "transaction_metadata_and_current_rpc",
+      "provenance": "CURRENT_ONLY",
+      "originalSlot": 441308645,
+      "capturedSlot": null
+    }
+  ]
+}

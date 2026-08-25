@@ -1,0 +1,28 @@
+{
+  "pubkey": "8GCr9711iFUmGdW4vPGoBYHoLEACKHKY8aycYNuxViXk",
+  "originalIndex": 19,
+  "role": {
+    "index": 19,
+    "pubkey": "8GCr9711iFUmGdW4vPGoBYHoLEACKHKY8aycYNuxViXk",
+    "source": "static",
+    "signer": false,
+    "writable": false
+  },
+  "relevant": true,
+  "replayUse": false,
+  "preState": {
+    "lamports": 1141440,
+    "dataBase64": "AgAAANsYUWhE25oGVvHwn2mjqdIAofUJ+nVNriwp+eaJikHX",
+    "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+    "executable": true,
+    "rentEpoch": 0
+  },
+  "limitations": [
+    "current account bytes cannot be treated as historical pre-state"
+  ],
+  "source": "current_rpc",
+  "provenance": "CURRENT_ONLY",
+  "evidence": [
+    "account observed at current RPC context, not at original slot 441308645"
+  ]
+}

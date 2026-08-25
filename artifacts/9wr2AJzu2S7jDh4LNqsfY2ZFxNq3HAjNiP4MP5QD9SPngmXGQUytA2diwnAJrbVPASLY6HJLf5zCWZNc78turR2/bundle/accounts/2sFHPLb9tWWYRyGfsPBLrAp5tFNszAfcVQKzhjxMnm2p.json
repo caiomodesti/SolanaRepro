@@ -1,0 +1,23 @@
+{
+  "pubkey": "2sFHPLb9tWWYRyGfsPBLrAp5tFNszAfcVQKzhjxMnm2p",
+  "originalIndex": 4,
+  "role": {
+    "index": 4,
+    "pubkey": "2sFHPLb9tWWYRyGfsPBLrAp5tFNszAfcVQKzhjxMnm2p",
+    "source": "static",
+    "signer": false,
+    "writable": false
+  },
+  "replayUse": true,
+  "confidence": "CURRENT_READONLY_ASSUMED_UNCHANGED",
+  "preState": {
+    "lamports": 1461600,
+    "dataBase64": "AAAAABbE8rli6ElnAUaKkRD235oU9DHAGVN8IcPjp2Sa6X1i4Pk3b/KGIwAGAQAAAAAWxPK5YuhJZwFGipEQ9t+aFPQxwBlTfCHD46dkmul9Yg==",
+    "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+    "executable": false,
+    "rentEpoch": 0
+  },
+  "limitations": [
+    "full account bytes were fetched after the transaction and are not historical proof"
+  ]
+}

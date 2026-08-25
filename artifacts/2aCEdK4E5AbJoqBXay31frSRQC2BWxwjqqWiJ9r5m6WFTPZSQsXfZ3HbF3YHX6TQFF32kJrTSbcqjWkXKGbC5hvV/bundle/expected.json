@@ -1,0 +1,22 @@
+{
+  "success": true,
+  "error": null,
+  "logs": [
+    "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+    "Program ComputeBudget111111111111111111111111111111 success",
+    "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+    "Program ComputeBudget111111111111111111111111111111 success",
+    "Program 11111111111111111111111111111111 invoke [1]",
+    "Program 11111111111111111111111111111111 success"
+  ],
+  "computeUnitsConsumed": 450,
+  "postBalances": [
+    754174338109,
+    48154784853,
+    1,
+    1
+  ],
+  "postTokenBalances": [],
+  "innerInstructions": [],
+  "returnData": null
+}

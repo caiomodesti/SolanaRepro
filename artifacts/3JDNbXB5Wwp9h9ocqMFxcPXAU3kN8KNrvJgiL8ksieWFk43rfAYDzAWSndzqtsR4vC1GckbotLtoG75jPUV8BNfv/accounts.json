@@ -1,0 +1,82 @@
+{
+  "method": "getMultipleAccounts",
+  "semantics": "current state observed at or after minContextSlot; NOT historical state at originalSlot",
+  "minContextSlot": 441310827,
+  "capturedAtSlot": 441311122,
+  "values": [
+    {
+      "pubkey": "Feed8SdBBh7NqD3gfnE8uzUan792SYihPpBVWHyYB69e",
+      "account": {
+        "data": [
+          "",
+          "base64"
+        ],
+        "executable": false,
+        "lamports": 8426076312,
+        "owner": "11111111111111111111111111111111",
+        "rentEpoch": 18446744073709552000,
+        "space": 0
+      }
+    },
+    {
+      "pubkey": "7S777JCNPJEcY67UkUJE9vxcE15EwrSktS1rhVJYx6Lj",
+      "account": null
+    },
+    {
+      "pubkey": "2zR8aQiRMB5rgGGwRPvD1ArUhmFX9JpkaQVVKknR5EKD",
+      "account": {
+        "data": [
+          "Bt324cWRALjdER2tKId8nPEkx90LHCCjL1KXCdu6X32mCaG9Pz+42jSkIvuXHWKaf7kcQKvGGPVBhvw2RwOaoPvaoh4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "base64"
+        ],
+        "executable": false,
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "rentEpoch": 18446744073709552000,
+        "space": 165
+      }
+    },
+    {
+      "pubkey": "9EPDPhrQBMwzJSfYSDDj2JBC72aAUpErjSxSnsax6wkC",
+      "account": {
+        "data": [
+          "Bt324cWRALjdER2tKId8nPEkx90LHCCjL1KXCdu6X31flIuLK6Y4W8lA5bquP75ZPYzbHmCbsADNH1+UOMW5VDTZIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "base64"
+        ],
+        "executable": false,
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "rentEpoch": 18446744073709552000,
+        "space": 165
+      }
+    },
+    {
+      "pubkey": "Tokena1kQ2NyHt9yv7eFiZrGrL8U9RVW7wq8m5zjjR6",
+      "account": {
+        "data": [
+          "AQAAAJNF1MWiUmeO2izsIuOfZ5jZYg0jlIcjNrGMdYCkb+FX7lihV+QAAAAGAQEAAACTRdTFolJnjtos7CLjn2eY2WINI5SHIzaxjHWApG/hVw==",
+          "base64"
+        ],
+        "executable": false,
+        "lamports": 1461600,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "rentEpoch": 18446744073709552000,
+        "space": 82
+      }
+    },
+    {
+      "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "account": {
+        "data": [
+          "AgAAACfxkLHTr5i4znFMROjK3/n4/EXLjl+sQgLv+BENl903",
+          "base64"
+        ],
+        "executable": true,
+        "lamports": 192795783,
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "rentEpoch": 18446744073709552000,
+        "space": 36
+      }
+    }
+  ]
+}

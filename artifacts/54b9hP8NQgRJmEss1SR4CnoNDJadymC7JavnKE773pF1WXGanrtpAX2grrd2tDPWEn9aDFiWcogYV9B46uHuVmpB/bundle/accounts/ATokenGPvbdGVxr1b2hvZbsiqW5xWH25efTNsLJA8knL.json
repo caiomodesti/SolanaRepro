@@ -1,0 +1,20 @@
+{
+  "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+  "originalIndex": 10,
+  "role": {
+    "index": 10,
+    "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+    "source": "static",
+    "signer": false,
+    "writable": false
+  },
+  "relevant": true,
+  "replayUse": false,
+  "preState": null,
+  "limitations": [],
+  "source": "pinned_runtime",
+  "provenance": "PROVEN",
+  "evidence": [
+    "program id is supplied by the pinned LiteSVM runtime"
+  ]
+}

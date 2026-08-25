@@ -1,0 +1,62 @@
+{
+  "status": "EXACT",
+  "rulesVersion": "0.1",
+  "checks": {
+    "result": {
+      "match": true,
+      "original": true,
+      "replay": true
+    },
+    "error": {
+      "match": true,
+      "original": null,
+      "replay": null
+    },
+    "logs": {
+      "exact": true,
+      "similarity": 1,
+      "originalLines": 6,
+      "replayLines": 6
+    },
+    "computeUnits": {
+      "exact": true,
+      "original": 450,
+      "replay": 450,
+      "differencePercent": 0
+    },
+    "postBalances": {
+      "exact": true,
+      "accounts": [
+        {
+          "pubkey": "69SNcRC8NqjHBSXEcugCN5oFKRQoKmddmWzZYc3tqtxk",
+          "expected": 754174338109,
+          "actual": 754174338109,
+          "exact": true
+        },
+        {
+          "pubkey": "BALCj4SEjBBBXGfeLB2nhLRCWT3XkqmXM1twc6mTxEWx",
+          "expected": 48154784853,
+          "actual": 48154784853,
+          "exact": true
+        }
+      ]
+    },
+    "postTokenBalances": {
+      "exact": true,
+      "accounts": []
+    },
+    "innerInstructions": {
+      "exact": true
+    },
+    "returnData": {
+      "exact": true
+    }
+  },
+  "classificationRules": {
+    "EXACT": "result, error, logs, compute units, compared lamport/token post-balances, inner instructions and return data are exact",
+    "HIGH_FIDELITY": "result/error and inner instructions exact; log LCS similarity >= 0.95; CU difference <= 1%; compared lamport/token balances exact",
+    "PARTIAL": "result/error exact, but one or more fidelity signals miss high-fidelity thresholds",
+    "FAILED": "result or canonical transaction error differs",
+    "UNSUPPORTED": "bundle lacks defensible historical pre-state even if an attempted replay happens to match"
+  }
+}

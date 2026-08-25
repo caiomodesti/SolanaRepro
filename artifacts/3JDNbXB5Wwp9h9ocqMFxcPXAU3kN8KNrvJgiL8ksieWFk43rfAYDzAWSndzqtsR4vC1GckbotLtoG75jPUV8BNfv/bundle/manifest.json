@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "0.1",
+  "toolVersion": "0.1.0",
+  "cluster": "mainnet-beta",
+  "signature": "3JDNbXB5Wwp9h9ocqMFxcPXAU3kN8KNrvJgiL8ksieWFk43rfAYDzAWSndzqtsR4vC1GckbotLtoG75jPUV8BNfv",
+  "slot": 441310827,
+  "transactionClass": "CLASSIC_SPL_TRANSFER",
+  "eligibility": "SUPPORTED",
+  "eligibilityReasons": [],
+  "stateProvenance": {
+    "PROVEN": 3,
+    "INFERRED": 3,
+    "CURRENT_ONLY": 0,
+    "UNKNOWN": 0
+  },
+  "runtime": {
+    "backend": "LiteSVM",
+    "version": "0.15.2",
+    "agave": "4.1.1"
+  },
+  "featureSet": {
+    "mode": "litesvm-compiled-mainnet-feature-set",
+    "historicalSlotPinned": false
+  },
+  "capturedAt": "2026-08-24T04:03:09.866Z",
+  "knownLimitations": [
+    "standard Solana RPC has no arbitrary historical getAccountInfo(slot)",
+    "historical feature activations and sysvars are not reconstructed",
+    "signature verification and recent blockhash age checks are disabled only inside the local replay runtime"
+  ],
+  "integrity": {
+    "algorithm": "sha256",
+    "files": {
+      "README.md": "218abec9427282e2ba01f99a273e434c489be74c7953412758a9d0ed959fe7b7",
+      "accounts/2zR8aQiRMB5rgGGwRPvD1ArUhmFX9JpkaQVVKknR5EKD.json": "810db17ab5a981a1cf0e5d2afa15b80f4de941f7676e82f1baf5d5826d8dc832",
+      "accounts/7S777JCNPJEcY67UkUJE9vxcE15EwrSktS1rhVJYx6Lj.json": "646aa14aa01cf07d4a1b2a85ff28f9e8e1c929eef578f3d5b592fdb37a4e2898",
+      "accounts/9EPDPhrQBMwzJSfYSDDj2JBC72aAUpErjSxSnsax6wkC.json": "9b2f8c7262f3e8d595691e36713789bc7227e8ce6890e34b0e4620a5fdef3f0f",
+      "accounts/Feed8SdBBh7NqD3gfnE8uzUan792SYihPpBVWHyYB69e.json": "f24b20b2e3750ec68563d66198d8d76220850fe8a0a9f4ae7e96da488129c781",
+      "accounts/Tokena1kQ2NyHt9yv7eFiZrGrL8U9RVW7wq8m5zjjR6.json": "10d9e8df61cfc314d24219f1f47359a61d5050adf8945d7358762784e43116b4",
+      "accounts/TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA.json": "dd430134a3612f29a8732fd207f3bc54898d5087e958f59796ce12bd4b4b2f92",
+      "expected.json": "014fc1510959293cf6185621d01263a63e1240b047df7296dc1b22dc7fb6d462",
+      "lookup-tables/index.json": "cbc0553af307cde8a9fe202e4e365f7e5d302d07588dc9305b0635b79c21582b",
+      "metadata.json": "4cc998ddd569be6136da9b1ae028e406c9eecc1fd18fda549d71fcce48606818",
+      "original-execution.json": "284067ffcd0848125610fe5cb361d5b20304016585fe1ab70a16684cd3bdb2e9",
+      "programs/TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA.so": "f03fec1ea57028140347224c65ddff03fda4ffa5578deaaa2401d19a2d7a15de",
+      "provenance.json": "a29620fe6b9cf042129feab8ea4ea0ef25e92727b1697a549c9987260252361d",
+      "transaction.json": "6db9a580c15f63319a08be351cdfc4c4fdf30847f5eedbd9580f7f88f1bee3ba"
+    },
+    "manifestCoreSha256": "63ce8fc60d3c3116f24cce4e2e71875444c7f3ce351d7aa4ad624936cb39e951"
+  }
+}

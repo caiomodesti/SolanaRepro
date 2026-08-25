@@ -1,0 +1,67 @@
+{
+  "signature": "2aCEdK4E5AbJoqBXay31frSRQC2BWxwjqqWiJ9r5m6WFTPZSQsXfZ3HbF3YHX6TQFF32kJrTSbcqjWkXKGbC5hvV",
+  "slot": 441308645,
+  "blockTime": 1787543283,
+  "fee": 650000,
+  "accountRoles": [
+    {
+      "index": 0,
+      "pubkey": "69SNcRC8NqjHBSXEcugCN5oFKRQoKmddmWzZYc3tqtxk",
+      "source": "static",
+      "signer": true,
+      "writable": true
+    },
+    {
+      "index": 1,
+      "pubkey": "BALCj4SEjBBBXGfeLB2nhLRCWT3XkqmXM1twc6mTxEWx",
+      "source": "static",
+      "signer": false,
+      "writable": true
+    },
+    {
+      "index": 2,
+      "pubkey": "ComputeBudget111111111111111111111111111111",
+      "source": "static",
+      "signer": false,
+      "writable": false
+    },
+    {
+      "index": 3,
+      "pubkey": "11111111111111111111111111111111",
+      "source": "static",
+      "signer": false,
+      "writable": false
+    }
+  ],
+  "preBalances": [
+    754181066532,
+    48148706430,
+    1,
+    1
+  ],
+  "preTokenBalances": [],
+  "postTokenBalances": [],
+  "programIds": [
+    "ComputeBudget111111111111111111111111111111",
+    "11111111111111111111111111111111"
+  ],
+  "success": true,
+  "error": null,
+  "logs": [
+    "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+    "Program ComputeBudget111111111111111111111111111111 success",
+    "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+    "Program ComputeBudget111111111111111111111111111111 success",
+    "Program 11111111111111111111111111111111 invoke [1]",
+    "Program 11111111111111111111111111111111 success"
+  ],
+  "computeUnitsConsumed": 450,
+  "postBalances": [
+    754174338109,
+    48154784853,
+    1,
+    1
+  ],
+  "innerInstructions": [],
+  "returnData": null
+}

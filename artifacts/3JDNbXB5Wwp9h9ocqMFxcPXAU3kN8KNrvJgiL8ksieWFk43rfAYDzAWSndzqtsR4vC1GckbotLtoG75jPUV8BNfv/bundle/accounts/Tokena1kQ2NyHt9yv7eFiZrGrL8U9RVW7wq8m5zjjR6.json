@@ -1,0 +1,29 @@
+{
+  "pubkey": "Tokena1kQ2NyHt9yv7eFiZrGrL8U9RVW7wq8m5zjjR6",
+  "originalIndex": 4,
+  "role": {
+    "index": 4,
+    "pubkey": "Tokena1kQ2NyHt9yv7eFiZrGrL8U9RVW7wq8m5zjjR6",
+    "source": "static",
+    "signer": false,
+    "writable": false
+  },
+  "relevant": true,
+  "replayUse": true,
+  "preState": {
+    "lamports": 1461600,
+    "dataBase64": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+    "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+    "executable": false,
+    "rentEpoch": 0
+  },
+  "limitations": [
+    "supply and authorities are normalized because TransferChecked does not consume them"
+  ],
+  "source": "inferred_from_transaction",
+  "provenance": "INFERRED",
+  "evidence": [
+    "mint address and decimals come from transaction metadata",
+    "initialized classic Mint layout is synthesized for TransferChecked"
+  ]
+}

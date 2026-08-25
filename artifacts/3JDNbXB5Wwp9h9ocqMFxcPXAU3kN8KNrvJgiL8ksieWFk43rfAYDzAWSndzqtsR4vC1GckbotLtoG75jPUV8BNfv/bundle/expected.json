@@ -1,0 +1,46 @@
+{
+  "success": true,
+  "error": null,
+  "logs": [
+    "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+    "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 200000 compute units",
+    "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success"
+  ],
+  "computeUnitsConsumed": 105,
+  "postBalances": [
+    8427041312,
+    0,
+    2039280,
+    2039280,
+    1461600,
+    192795783
+  ],
+  "postTokenBalances": [
+    {
+      "accountIndex": 2,
+      "mint": "Tokena1kQ2NyHt9yv7eFiZrGrL8U9RVW7wq8m5zjjR6",
+      "owner": "CB9CP8x3hyj74vB3sjdADq8remz5eYAPPVS7sAbhCFJP",
+      "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "uiTokenAmount": {
+        "amount": "513989371",
+        "decimals": 6,
+        "uiAmount": 513.989371,
+        "uiAmountString": "513.989371"
+      }
+    },
+    {
+      "accountIndex": 3,
+      "mint": "Tokena1kQ2NyHt9yv7eFiZrGrL8U9RVW7wq8m5zjjR6",
+      "owner": "7S777JCNPJEcY67UkUJE9vxcE15EwrSktS1rhVJYx6Lj",
+      "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "uiTokenAmount": {
+        "amount": "2152756",
+        "decimals": 6,
+        "uiAmount": 2.152756,
+        "uiAmountString": "2.152756"
+      }
+    }
+  ],
+  "innerInstructions": [],
+  "returnData": null
+}

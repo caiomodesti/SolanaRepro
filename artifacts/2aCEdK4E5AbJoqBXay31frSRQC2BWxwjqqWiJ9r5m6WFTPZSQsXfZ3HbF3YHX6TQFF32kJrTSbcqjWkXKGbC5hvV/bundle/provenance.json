@@ -1,0 +1,113 @@
+{
+  "originalSlot": 441308645,
+  "policy": "CURRENT_ONLY and UNKNOWN relevant inputs make a bundle UNSUPPORTED",
+  "summary": {
+    "PROVEN": 4,
+    "INFERRED": 0,
+    "CURRENT_ONLY": 0,
+    "UNKNOWN": 0
+  },
+  "accounts": [
+    {
+      "pubkey": "69SNcRC8NqjHBSXEcugCN5oFKRQoKmddmWzZYc3tqtxk",
+      "originalIndex": 0,
+      "role": {
+        "index": 0,
+        "pubkey": "69SNcRC8NqjHBSXEcugCN5oFKRQoKmddmWzZYc3tqtxk",
+        "source": "static",
+        "signer": true,
+        "writable": true
+      },
+      "source": "transaction_metadata",
+      "provenance": "PROVEN",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441308819,
+      "evidence": [
+        "pre-transaction lamports come from getTransaction",
+        "System account data is structurally empty"
+      ],
+      "limitations": []
+    },
+    {
+      "pubkey": "BALCj4SEjBBBXGfeLB2nhLRCWT3XkqmXM1twc6mTxEWx",
+      "originalIndex": 1,
+      "role": {
+        "index": 1,
+        "pubkey": "BALCj4SEjBBBXGfeLB2nhLRCWT3XkqmXM1twc6mTxEWx",
+        "source": "static",
+        "signer": false,
+        "writable": true
+      },
+      "source": "transaction_metadata",
+      "provenance": "PROVEN",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441308819,
+      "evidence": [
+        "pre-transaction lamports come from getTransaction",
+        "System account data is structurally empty"
+      ],
+      "limitations": []
+    },
+    {
+      "pubkey": "ComputeBudget111111111111111111111111111111",
+      "originalIndex": 2,
+      "role": {
+        "index": 2,
+        "pubkey": "ComputeBudget111111111111111111111111111111",
+        "source": "static",
+        "signer": false,
+        "writable": false
+      },
+      "source": "pinned_runtime",
+      "provenance": "PROVEN",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441308819,
+      "evidence": [
+        "program id is supplied by the pinned LiteSVM runtime"
+      ],
+      "limitations": []
+    },
+    {
+      "pubkey": "11111111111111111111111111111111",
+      "originalIndex": 3,
+      "role": {
+        "index": 3,
+        "pubkey": "11111111111111111111111111111111",
+        "source": "static",
+        "signer": false,
+        "writable": false
+      },
+      "source": "pinned_runtime",
+      "provenance": "PROVEN",
+      "relevant": true,
+      "originalSlot": 441308645,
+      "capturedSlot": 441308819,
+      "evidence": [
+        "program id is supplied by the pinned LiteSVM runtime"
+      ],
+      "limitations": []
+    }
+  ],
+  "programs": [
+    {
+      "programId": "ComputeBudget111111111111111111111111111111",
+      "source": "pinned_runtime",
+      "provenance": "PROVEN",
+      "originalSlot": 441308645,
+      "capturedSlot": 441308819,
+      "limitation": null
+    },
+    {
+      "programId": "11111111111111111111111111111111",
+      "source": "pinned_runtime",
+      "provenance": "PROVEN",
+      "originalSlot": 441308645,
+      "capturedSlot": 441308819,
+      "limitation": null
+    }
+  ],
+  "lookupTables": []
+}

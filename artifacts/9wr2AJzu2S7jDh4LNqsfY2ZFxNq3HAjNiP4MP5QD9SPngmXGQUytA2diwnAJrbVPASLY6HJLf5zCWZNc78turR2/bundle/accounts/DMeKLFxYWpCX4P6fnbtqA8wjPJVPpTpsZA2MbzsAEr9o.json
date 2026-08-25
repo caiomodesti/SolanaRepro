@@ -1,0 +1,23 @@
+{
+  "pubkey": "DMeKLFxYWpCX4P6fnbtqA8wjPJVPpTpsZA2MbzsAEr9o",
+  "originalIndex": 2,
+  "role": {
+    "index": 2,
+    "pubkey": "DMeKLFxYWpCX4P6fnbtqA8wjPJVPpTpsZA2MbzsAEr9o",
+    "source": "static",
+    "signer": false,
+    "writable": true
+  },
+  "replayUse": true,
+  "confidence": "INFERRED_TOKEN_AMOUNT_ON_CURRENT_LAYOUT",
+  "preState": {
+    "lamports": 2039280,
+    "dataBase64": "G7rgbJbYZ4bkgoPq/hgu6sjNNBMyfewOWAJJ/ogdacGpP+CKKk/iqiJh+hhssV8Kzdgc2TUZqD/HXnknK/dnaCo1ivGpjx4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+    "executable": false,
+    "rentEpoch": 0
+  },
+  "limitations": [
+    "only the token amount field is historical; all other bytes come from current state"
+  ]
+}

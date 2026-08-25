@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "0.1",
+  "toolVersion": "0.1.0",
+  "cluster": "mainnet-beta",
+  "signature": "54b9hP8NQgRJmEss1SR4CnoNDJadymC7JavnKE773pF1WXGanrtpAX2grrd2tDPWEn9aDFiWcogYV9B46uHuVmpB",
+  "slot": 441308645,
+  "transactionClass": "UNSUPPORTED_TRANSACTION_CLASS",
+  "eligibility": "UNSUPPORTED",
+  "eligibilityReasons": [
+    {
+      "code": "UNSUPPORTED_TRANSACTION_CLASS",
+      "message": "transaction is outside the explicit MVP allowlist",
+      "details": {}
+    },
+    {
+      "code": "UNSUPPORTED_ACCOUNT_PRESTATE",
+      "message": "one or more relevant accounts lack defensible pre-state",
+      "details": {
+        "accounts": [
+          "5XMkpjQPbYtbTYJeLnpps3y2UyGN4FjMjHtxm53jWmwK",
+          "F5N2uE2oFMuLPJWC3HvPrrnW2ZBwn49jSZ2nGekojTrF",
+          "BKGe1LRLZm9GBBoJDhX7DQTo3XVzi3x2KLmM1mMMzgJd",
+          "FyMQHH9PkgAz621i3qqqd7JBAwmt77KnCj17ZVHZ6Aqu",
+          "8xWYx3rcteiMjEvCjF1rhGqHXeY4jk9rqe6i8DK2rrQr",
+          "DrBQJex6RHcWMTXYtcbjAk3Rz7gkfArapEbAyCuZhtMF",
+          "Ak7UvkZQwNNHNxUBmuTNG2YGk8QqyfPNJKgycQ4W56xi",
+          "EwfXVHZGa3Nz2zc8eCzQ9vze11fmbCZAsaSz8EKGnqQn",
+          "So11111111111111111111111111111111111111112",
+          "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+          "ADyA8hdefvWN2dbGGWFotbzWxrAvLW83WG6QCVXvJKqw",
+          "up5w4kvmWnfXiqfswtBjkRAG8XFZfiafnSAzbgjmqmU",
+          "5PHirr8joyTMp9JMm6nW7hNDVyEYdkzDqazxPD7RaTjx",
+          "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ",
+          "A7hAgCzFw14fejgCp387JUJRMNyz4j89JKnhtKU8piqW"
+        ]
+      }
+    },
+    {
+      "code": "UNSUPPORTED_PROGRAM_PROVENANCE",
+      "message": "executed program bytes are not proven for the original slot",
+      "details": {
+        "programs": [
+          "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+          "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ"
+        ]
+      }
+    },
+    {
+      "code": "UNSUPPORTED_UPGRADEABLE_PROGRAM_VERSION",
+      "message": "upgradeable program version at the original slot is not proven",
+      "details": {
+        "programs": [
+          "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+          "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ"
+        ]
+      }
+    }
+  ],
+  "stateProvenance": {
+    "PROVEN": 9,
+    "INFERRED": 0,
+    "CURRENT_ONLY": 14,
+    "UNKNOWN": 1
+  },
+  "runtime": {
+    "backend": "LiteSVM",
+    "version": "0.15.2",
+    "agave": "4.1.1"
+  },
+  "featureSet": {
+    "mode": "litesvm-compiled-mainnet-feature-set",
+    "historicalSlotPinned": false
+  },
+  "capturedAt": "2026-08-24T04:05:37.261Z",
+  "knownLimitations": [
+    "standard Solana RPC has no arbitrary historical getAccountInfo(slot)",
+    "historical feature activations and sysvars are not reconstructed",
+    "signature verification and recent blockhash age checks are disabled only inside the local replay runtime"
+  ],
+  "integrity": {
+    "algorithm": "sha256",
+    "files": {
+      "README.md": "3a0b9aa30fe0462c06c2ed70f916be136f2ed3edca8f987be98dd5441bd1bd20",
+      "accounts/11111111111111111111111111111111.json": "dee1ed6edfd06ad526c53db3f16924ddbe85674c54552640e56a5dd142cbd9d0",
+      "accounts/5PHirr8joyTMp9JMm6nW7hNDVyEYdkzDqazxPD7RaTjx.json": "96f2e15312a08f27e87a9bdc048354ad8892454c8f2417dfb74d0df9b1d1a264",
+      "accounts/5XMkpjQPbYtbTYJeLnpps3y2UyGN4FjMjHtxm53jWmwK.json": "80c608bd8cb364d23b9ff4fd5a70dc384baa20109e96b0822435b23546aeefbb",
+      "accounts/8N3GDaZ2iwN65oxVatKTLPNooAVUJTbfiVJ1ahyqwjSk.json": "f75d6f699e5d771d337ab2c8fa4b372d10d743f29f08ddada0c09351715d470e",
+      "accounts/8xWYx3rcteiMjEvCjF1rhGqHXeY4jk9rqe6i8DK2rrQr.json": "9e62e8c17bcec730f06124c1e44ea7db196fd85f3c932a748fb717ee4b25b0dd",
+      "accounts/A7hAgCzFw14fejgCp387JUJRMNyz4j89JKnhtKU8piqW.json": "889647322f3bd686d01e1aeb824a7b8b88a55faefc52c79aff11a41e6ddeda4e",
+      "accounts/ADyA8hdefvWN2dbGGWFotbzWxrAvLW83WG6QCVXvJKqw.json": "e5772600dfa6fe17ec11199e65c2f5cbbf09d171e3982c1a32b56af7a9d00e95",
+      "accounts/ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL.json": "5cdd7df5d63e2b8671737b56c2f98b041442712a39ee0041be5e727ac8db3503",
+      "accounts/Ak7UvkZQwNNHNxUBmuTNG2YGk8QqyfPNJKgycQ4W56xi.json": "dd7aa9857f0cc865fa58a678fb5be0bafe06c5ed1b6827b7d94101ff79127c4f",
+      "accounts/BKGe1LRLZm9GBBoJDhX7DQTo3XVzi3x2KLmM1mMMzgJd.json": "d98524611ad9ca1252fab77730ae166d3bf3666b773dbca1511a9a26d23327cf",
+      "accounts/ComputeBudget111111111111111111111111111111.json": "26ba406fc6d5ad6cc55234d40f6f321b2412f6d8ae51e5f7d96cb0f1b58f8caf",
+      "accounts/DrBQJex6RHcWMTXYtcbjAk3Rz7gkfArapEbAyCuZhtMF.json": "560e325d48882b1ec74aec23fa7e9851109f9f760c864e63cb17748a26056834",
+      "accounts/DxgNTemhCYxB8X3MpNA6Z4XU4KakfHq8nWVbNCJC2t7w.json": "3c1a8a2de550972983a605c74f72ed6c420bd20528c815bd42462cbadd46b27f",
+      "accounts/EwfXVHZGa3Nz2zc8eCzQ9vze11fmbCZAsaSz8EKGnqQn.json": "294e11fae5eb552855c6057ff3c326e6aada4c42ddde03a1f29531bd3a34447f",
+      "accounts/F5N2uE2oFMuLPJWC3HvPrrnW2ZBwn49jSZ2nGekojTrF.json": "fc507a68d35453afff3657e609ff8e692fa66209caf72c141b9115f72cb2a59e",
+      "accounts/FyMQHH9PkgAz621i3qqqd7JBAwmt77KnCj17ZVHZ6Aqu.json": "5b712f76e01148f21aeb3c6fb8f72ff72b68baebd96af97fd86606eecb3393b5",
+      "accounts/G5UZAVbAf46s7cKWoyKu8kYTip9DGTpbLZ2qa9Aq69dP.json": "56c296b3a5923f727f3fc9662cbf086fcf1281e3976b88835953b8ff38f50e96",
+      "accounts/GS4CU59F31iL7aR2Q8zVS8DRrcRnXX1yjQ66TqNVQnaR.json": "a8a3fb8108cf81f61f8dc111a6f0ba78c5ceadce73261d6cd2904e619449d833",
+      "accounts/So11111111111111111111111111111111111111112.json": "49872cd5fb43774f6e149171edbf0e41c812685a9be5a24be4b75acfa4a0e9da",
+      "accounts/TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA.json": "74b7a8eebfcc8b89ea1928b5b356f4dcff33be378b9be0a84d4302e510397c0e",
+      "accounts/TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb.json": "fcf846b10463502f8c108ebb162b9ca831f7d6eb0d88c679365c0889d5f685cf",
+      "accounts/pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA.json": "fb5f37885d9a31c5280ac20a9f9a001dadd404259aa4bf5952eeb1c5be1a7fca",
+      "accounts/pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ.json": "b95b2fe9446fe6ed503620a22329f093303be07d238cf9c4c97a2cd90c8ca1dd",
+      "accounts/up5w4kvmWnfXiqfswtBjkRAG8XFZfiafnSAzbgjmqmU.json": "485d604f8f2f30e62912100fa8bed681fcce3f281950ecabbf2fe65df9845bd3",
+      "expected.json": "0f5484aad509e135af20113ea4078fed6bf8800dc7287bf44c464c15b67702c4",
+      "lookup-tables/index.json": "cbc0553af307cde8a9fe202e4e365f7e5d302d07588dc9305b0635b79c21582b",
+      "metadata.json": "f4f88387a8fd2d0e8a2d0b63f1d0d01fd23c41fadf1154f33c958facd99fd418",
+      "original-execution.json": "94fee5b25933e268b1be69d17d0901a6486f84fc758ec510d4d63b9830cd5425",
+      "programs/TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA.so": "f03fec1ea57028140347224c65ddff03fda4ffa5578deaaa2401d19a2d7a15de",
+      "programs/TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb.so": "0999dbf708971e723b08d1caafc988826a59c6001ed6dc02260da07defbe1469",
+      "programs/pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA.so": "e97dab8f7b00d119c2a984571431044b477d1601fcc5fc2d3c9496efec8a35cc",
+      "programs/pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ.so": "1337a8223cf14ee7e66acfa6bb6cdfe16815320549a9975013fef1e54aefe34d",
+      "provenance.json": "ba58f9709f1fb20e92fe35e5e64ab83b593d44e1c7e9685de25f98157cb2f654",
+      "transaction.json": "e9bfdecaf25e9596df21aa259d3ea899d7cb291f21270d28488438f3547c8ebd"
+    },
+    "manifestCoreSha256": "f098c66a453703b778bb5d71f27e435a26db99543b538c0f390d7eb1040a607a"
+  }
+}

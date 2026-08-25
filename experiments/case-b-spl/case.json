@@ -1,0 +1,10 @@
+{
+  "case": "B",
+  "class": "classic-spl-token-transfer",
+  "signature": "3JDNbXB5Wwp9h9ocqMFxcPXAU3kN8KNrvJgiL8ksieWFk43rfAYDzAWSndzqtsR4vC1GckbotLtoG75jPUV8BNfv",
+  "slot": 441310827,
+  "artifact": "artifacts/3JDNbXB5Wwp9h9ocqMFxcPXAU3kN8KNrvJgiL8ksieWFk43rfAYDzAWSndzqtsR4vC1GckbotLtoG75jPUV8BNfv",
+  "eligibility": "SUPPORTED_WITH_ASSUMPTIONS",
+  "prestateAssumption": "INFERRED_TOKEN_AMOUNT_ON_CURRENT_LAYOUT",
+  "result": "EXACT"
+}

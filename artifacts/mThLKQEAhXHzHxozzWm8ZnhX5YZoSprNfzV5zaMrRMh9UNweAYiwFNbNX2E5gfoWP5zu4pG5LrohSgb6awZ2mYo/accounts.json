@@ -1,0 +1,64 @@
+{
+  "method": "getMultipleAccounts",
+  "semantics": "current state observed at or after minContextSlot; NOT historical state at originalSlot",
+  "minContextSlot": 441309952,
+  "capturedAtSlot": 441310127,
+  "values": [
+    {
+      "pubkey": "BTmkLGp9Zfa6m88jJYEyJrgXpAjg2sSQU7q85sxy1V7T",
+      "account": {
+        "data": [
+          "",
+          "base64"
+        ],
+        "executable": false,
+        "lamports": 1756007,
+        "owner": "11111111111111111111111111111111",
+        "rentEpoch": 18446744073709552000,
+        "space": 0
+      }
+    },
+    {
+      "pubkey": "D9SrrYGX9Qmw5k63kQ28p8ZtdFPQhp1gNwUxTHCS42Ly",
+      "account": {
+        "data": [
+          "",
+          "base64"
+        ],
+        "executable": false,
+        "lamports": 4411996000,
+        "owner": "11111111111111111111111111111111",
+        "rentEpoch": 18446744073709552000,
+        "space": 0
+      }
+    },
+    {
+      "pubkey": "11111111111111111111111111111111",
+      "account": {
+        "data": [
+          "c29sYW5hX3N5c3RlbV9wcm9ncmFt",
+          "base64"
+        ],
+        "executable": true,
+        "lamports": 1,
+        "owner": "NativeLoader1111111111111111111111111111111",
+        "rentEpoch": 18446744073709552000,
+        "space": 21
+      }
+    },
+    {
+      "pubkey": "ComputeBudget111111111111111111111111111111",
+      "account": {
+        "data": [
+          "Y29tcHV0ZV9idWRnZXRfcHJvZ3JhbQ==",
+          "base64"
+        ],
+        "executable": true,
+        "lamports": 1,
+        "owner": "NativeLoader1111111111111111111111111111111",
+        "rentEpoch": 18446744073709552000,
+        "space": 22
+      }
+    }
+  ]
+}

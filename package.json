@@ -1,0 +1,27 @@
+{
+  "name": "solana-repro",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Open-source forensic transaction reproduction infrastructure for Solana.",
+  "bin": {
+    "solrepro": "./src/cli.js",
+    "repro-lab": "./src/cli.js"
+  },
+  "scripts": {
+    "capture": "node src/cli.js capture",
+    "inspect": "node src/cli.js inspect",
+    "discover": "node src/cli.js discover",
+    "bundle": "node src/cli.js bundle",
+    "replay": "node src/cli.js replay",
+    "compare": "node src/cli.js compare",
+    "assert": "node src/cli.js assert",
+    "test": "node --test",
+    "regression": "node scripts/run-regressions.js",
+    "test:ci": "node --test && node scripts/run-regressions.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {}
+}

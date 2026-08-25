@@ -1,0 +1,20 @@
+{
+  "pubkey": "93sDRHSvMbEoGRSnxVhurp9Cvf6Fb22tS2uYv4ddTCNv",
+  "originalIndex": 9,
+  "role": {
+    "index": 9,
+    "pubkey": "93sDRHSvMbEoGRSnxVhurp9Cvf6Fb22tS2uYv4ddTCNv",
+    "source": "static",
+    "signer": false,
+    "writable": true
+  },
+  "relevant": true,
+  "replayUse": false,
+  "preState": null,
+  "limitations": [
+    "account is closed or unavailable and full historical bytes were not recovered"
+  ],
+  "source": "unavailable",
+  "provenance": "UNKNOWN",
+  "evidence": []
+}

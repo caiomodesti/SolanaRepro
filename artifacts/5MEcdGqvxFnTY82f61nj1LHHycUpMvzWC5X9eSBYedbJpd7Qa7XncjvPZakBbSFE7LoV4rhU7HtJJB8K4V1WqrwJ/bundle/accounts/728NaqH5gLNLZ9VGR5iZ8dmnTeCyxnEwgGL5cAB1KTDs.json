@@ -1,0 +1,20 @@
+{
+  "pubkey": "728NaqH5gLNLZ9VGR5iZ8dmnTeCyxnEwgGL5cAB1KTDs",
+  "originalIndex": 18,
+  "role": {
+    "index": 18,
+    "pubkey": "728NaqH5gLNLZ9VGR5iZ8dmnTeCyxnEwgGL5cAB1KTDs",
+    "source": "static",
+    "signer": false,
+    "writable": false
+  },
+  "relevant": true,
+  "replayUse": false,
+  "preState": null,
+  "limitations": [],
+  "source": "transaction_metadata",
+  "provenance": "PROVEN",
+  "evidence": [
+    "zero pre-balance and absent account are recorded by the transaction/current observation"
+  ]
+}

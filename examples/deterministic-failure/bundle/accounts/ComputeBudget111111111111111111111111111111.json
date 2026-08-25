@@ -1,0 +1,20 @@
+{
+  "pubkey": "ComputeBudget111111111111111111111111111111",
+  "originalIndex": 3,
+  "role": {
+    "index": 3,
+    "pubkey": "ComputeBudget111111111111111111111111111111",
+    "source": "static",
+    "signer": false,
+    "writable": false
+  },
+  "relevant": true,
+  "replayUse": false,
+  "preState": null,
+  "limitations": [],
+  "source": "pinned_runtime",
+  "provenance": "PROVEN",
+  "evidence": [
+    "program id is supplied by the pinned LiteSVM runtime"
+  ]
+}

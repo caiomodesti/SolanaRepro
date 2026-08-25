@@ -1,0 +1,23 @@
+{
+  "pubkey": "D2hxozWuepFRh33MiYhk5qVfM7P2fhBUq2kz7TE1nMui",
+  "originalIndex": 1,
+  "role": {
+    "index": 1,
+    "pubkey": "D2hxozWuepFRh33MiYhk5qVfM7P2fhBUq2kz7TE1nMui",
+    "source": "static",
+    "signer": false,
+    "writable": true
+  },
+  "replayUse": true,
+  "confidence": "CURRENT_WRITABLE_UNSAFE",
+  "preState": {
+    "lamports": 0,
+    "dataBase64": "G7rgbJbYZ4bkgoPq/hgu6sjNNBMyfewOWAJJ/ogdacHU5la27qw4UvlvDiBzRPQU/Clwt6/zJTvdNcrR2ogt3jfIBY8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+    "executable": false,
+    "rentEpoch": 0
+  },
+  "limitations": [
+    "writable account data is current state; deterministic historical replay is not defensible"
+  ]
+}

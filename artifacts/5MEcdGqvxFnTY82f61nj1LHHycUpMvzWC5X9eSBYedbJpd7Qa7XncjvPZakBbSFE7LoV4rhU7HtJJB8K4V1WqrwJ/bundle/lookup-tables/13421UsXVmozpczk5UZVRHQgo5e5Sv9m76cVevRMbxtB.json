@@ -1,0 +1,15 @@
+{
+  "pubkey": "13421UsXVmozpczk5UZVRHQgo5e5Sv9m76cVevRMbxtB",
+  "descriptor": {
+    "accountKey": "13421UsXVmozpczk5UZVRHQgo5e5Sv9m76cVevRMbxtB",
+    "readonlyIndexes": [],
+    "writableIndexes": [
+      8,
+      12,
+      15
+    ]
+  },
+  "observed": null,
+  "confidence": "UNAVAILABLE",
+  "limitation": "standard RPC did not prove the ALT account bytes at the original slot"
+}

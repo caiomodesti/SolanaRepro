@@ -1,0 +1,71 @@
+{
+  "signature": "mThLKQEAhXHzHxozzWm8ZnhX5YZoSprNfzV5zaMrRMh9UNweAYiwFNbNX2E5gfoWP5zu4pG5LrohSgb6awZ2mYo",
+  "slot": 441309952,
+  "blockTime": 1787543763,
+  "fee": 80000,
+  "accountRoles": [
+    {
+      "index": 0,
+      "pubkey": "BTmkLGp9Zfa6m88jJYEyJrgXpAjg2sSQU7q85sxy1V7T",
+      "source": "static",
+      "signer": true,
+      "writable": true
+    },
+    {
+      "index": 1,
+      "pubkey": "D9SrrYGX9Qmw5k63kQ28p8ZtdFPQhp1gNwUxTHCS42Ly",
+      "source": "static",
+      "signer": false,
+      "writable": true
+    },
+    {
+      "index": 2,
+      "pubkey": "11111111111111111111111111111111",
+      "source": "static",
+      "signer": false,
+      "writable": false
+    },
+    {
+      "index": 3,
+      "pubkey": "ComputeBudget111111111111111111111111111111",
+      "source": "static",
+      "signer": false,
+      "writable": false
+    }
+  ],
+  "preBalances": [
+    4403915940,
+    9996000,
+    1,
+    1
+  ],
+  "preTokenBalances": [],
+  "postTokenBalances": [],
+  "programIds": [
+    "ComputeBudget111111111111111111111111111111",
+    "11111111111111111111111111111111"
+  ],
+  "success": false,
+  "error": {
+    "InsufficientFundsForRent": {
+      "account_index": 0
+    }
+  },
+  "logs": [
+    "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+    "Program ComputeBudget111111111111111111111111111111 success",
+    "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+    "Program ComputeBudget111111111111111111111111111111 success",
+    "Program 11111111111111111111111111111111 invoke [1]",
+    "Program 11111111111111111111111111111111 success"
+  ],
+  "computeUnitsConsumed": 450,
+  "postBalances": [
+    4403835940,
+    9996000,
+    1,
+    1
+  ],
+  "innerInstructions": [],
+  "returnData": null
+}

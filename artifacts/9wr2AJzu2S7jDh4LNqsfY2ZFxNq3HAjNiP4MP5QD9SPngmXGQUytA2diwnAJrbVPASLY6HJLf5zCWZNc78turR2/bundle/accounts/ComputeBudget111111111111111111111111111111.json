@@ -1,0 +1,15 @@
+{
+  "pubkey": "ComputeBudget111111111111111111111111111111",
+  "originalIndex": 6,
+  "role": {
+    "index": 6,
+    "pubkey": "ComputeBudget111111111111111111111111111111",
+    "source": "static",
+    "signer": false,
+    "writable": false
+  },
+  "replayUse": false,
+  "confidence": "RUNTIME_BUILTIN",
+  "preState": null,
+  "limitations": []
+}

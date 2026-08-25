@@ -1,0 +1,83 @@
+{
+  "status": "EXACT",
+  "rulesVersion": "0.1",
+  "checks": {
+    "result": {
+      "match": true,
+      "original": true,
+      "replay": true
+    },
+    "error": {
+      "match": true,
+      "original": null,
+      "replay": null
+    },
+    "logs": {
+      "exact": true,
+      "similarity": 1,
+      "originalLines": 3,
+      "replayLines": 3
+    },
+    "computeUnits": {
+      "exact": true,
+      "original": 105,
+      "replay": 105,
+      "differencePercent": 0
+    },
+    "postBalances": {
+      "exact": true,
+      "accounts": [
+        {
+          "pubkey": "Feed8SdBBh7NqD3gfnE8uzUan792SYihPpBVWHyYB69e",
+          "expected": 8427041312,
+          "actual": 8427041312,
+          "exact": true
+        },
+        {
+          "pubkey": "2zR8aQiRMB5rgGGwRPvD1ArUhmFX9JpkaQVVKknR5EKD",
+          "expected": 2039280,
+          "actual": 2039280,
+          "exact": true
+        },
+        {
+          "pubkey": "9EPDPhrQBMwzJSfYSDDj2JBC72aAUpErjSxSnsax6wkC",
+          "expected": 2039280,
+          "actual": 2039280,
+          "exact": true
+        }
+      ]
+    },
+    "postTokenBalances": {
+      "exact": true,
+      "accounts": [
+        {
+          "pubkey": "2zR8aQiRMB5rgGGwRPvD1ArUhmFX9JpkaQVVKknR5EKD",
+          "mint": "Tokena1kQ2NyHt9yv7eFiZrGrL8U9RVW7wq8m5zjjR6",
+          "expected": "513989371",
+          "actual": "513989371",
+          "exact": true
+        },
+        {
+          "pubkey": "9EPDPhrQBMwzJSfYSDDj2JBC72aAUpErjSxSnsax6wkC",
+          "mint": "Tokena1kQ2NyHt9yv7eFiZrGrL8U9RVW7wq8m5zjjR6",
+          "expected": "2152756",
+          "actual": "2152756",
+          "exact": true
+        }
+      ]
+    },
+    "innerInstructions": {
+      "exact": true
+    },
+    "returnData": {
+      "exact": true
+    }
+  },
+  "classificationRules": {
+    "EXACT": "result, error, logs, compute units, compared lamport/token post-balances, inner instructions and return data are exact",
+    "HIGH_FIDELITY": "result/error and inner instructions exact; log LCS similarity >= 0.95; CU difference <= 1%; compared lamport/token balances exact",
+    "PARTIAL": "result/error exact, but one or more fidelity signals miss high-fidelity thresholds",
+    "FAILED": "result or canonical transaction error differs",
+    "UNSUPPORTED": "bundle lacks defensible historical pre-state even if an attempted replay happens to match"
+  }
+}

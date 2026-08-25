@@ -1,0 +1,15 @@
+{
+  "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+  "originalIndex": 8,
+  "role": {
+    "index": 8,
+    "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+    "source": "static",
+    "signer": false,
+    "writable": false
+  },
+  "replayUse": false,
+  "confidence": "RUNTIME_BUILTIN",
+  "preState": null,
+  "limitations": []
+}

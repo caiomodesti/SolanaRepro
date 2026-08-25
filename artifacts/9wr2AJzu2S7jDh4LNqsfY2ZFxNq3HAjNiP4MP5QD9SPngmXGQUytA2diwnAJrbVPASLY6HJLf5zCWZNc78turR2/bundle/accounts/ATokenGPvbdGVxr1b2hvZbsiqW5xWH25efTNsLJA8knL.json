@@ -1,0 +1,15 @@
+{
+  "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+  "originalIndex": 5,
+  "role": {
+    "index": 5,
+    "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+    "source": "static",
+    "signer": false,
+    "writable": false
+  },
+  "replayUse": false,
+  "confidence": "RUNTIME_BUILTIN",
+  "preState": null,
+  "limitations": []
+}

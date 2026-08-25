@@ -1,0 +1,55 @@
+{
+  "success": false,
+  "status": "UNSUPPORTED",
+  "reason": "bundle is ineligible for evidence-grade replay",
+  "reasons": [
+    {
+      "code": "UNSUPPORTED_TRANSACTION_CLASS",
+      "message": "transaction is outside the explicit MVP allowlist",
+      "details": {}
+    },
+    {
+      "code": "UNSUPPORTED_ACCOUNT_PRESTATE",
+      "message": "one or more relevant accounts lack defensible pre-state",
+      "details": {
+        "accounts": [
+          "5XMkpjQPbYtbTYJeLnpps3y2UyGN4FjMjHtxm53jWmwK",
+          "F5N2uE2oFMuLPJWC3HvPrrnW2ZBwn49jSZ2nGekojTrF",
+          "BKGe1LRLZm9GBBoJDhX7DQTo3XVzi3x2KLmM1mMMzgJd",
+          "FyMQHH9PkgAz621i3qqqd7JBAwmt77KnCj17ZVHZ6Aqu",
+          "8xWYx3rcteiMjEvCjF1rhGqHXeY4jk9rqe6i8DK2rrQr",
+          "DrBQJex6RHcWMTXYtcbjAk3Rz7gkfArapEbAyCuZhtMF",
+          "Ak7UvkZQwNNHNxUBmuTNG2YGk8QqyfPNJKgycQ4W56xi",
+          "EwfXVHZGa3Nz2zc8eCzQ9vze11fmbCZAsaSz8EKGnqQn",
+          "So11111111111111111111111111111111111111112",
+          "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+          "ADyA8hdefvWN2dbGGWFotbzWxrAvLW83WG6QCVXvJKqw",
+          "up5w4kvmWnfXiqfswtBjkRAG8XFZfiafnSAzbgjmqmU",
+          "5PHirr8joyTMp9JMm6nW7hNDVyEYdkzDqazxPD7RaTjx",
+          "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ",
+          "A7hAgCzFw14fejgCp387JUJRMNyz4j89JKnhtKU8piqW"
+        ]
+      }
+    },
+    {
+      "code": "UNSUPPORTED_PROGRAM_PROVENANCE",
+      "message": "executed program bytes are not proven for the original slot",
+      "details": {
+        "programs": [
+          "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+          "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ"
+        ]
+      }
+    },
+    {
+      "code": "UNSUPPORTED_UPGRADEABLE_PROGRAM_VERSION",
+      "message": "upgradeable program version at the original slot is not proven",
+      "details": {
+        "programs": [
+          "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+          "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "programId": "ComputeBudget111111111111111111111111111111",
+    "kind": "executable-account",
+    "loader": "NativeLoader1111111111111111111111111111111",
+    "programAccount": {
+      "data": [
+        "Y29tcHV0ZV9idWRnZXRfcHJvZ3JhbQ==",
+        "base64"
+      ],
+      "executable": true,
+      "lamports": 1,
+      "owner": "NativeLoader1111111111111111111111111111111",
+      "rentEpoch": 18446744073709552000,
+      "space": 22
+    },
+    "programData": null,
+    "executableFile": null,
+    "warning": null
+  },
+  {
+    "programId": "11111111111111111111111111111111",
+    "kind": "builtin-system",
+    "loader": "NativeLoader1111111111111111111111111111111",
+    "programAccount": {
+      "data": [
+        "c29sYW5hX3N5c3RlbV9wcm9ncmFt",
+        "base64"
+      ],
+      "executable": true,
+      "lamports": 1,
+      "owner": "NativeLoader1111111111111111111111111111111",
+      "rentEpoch": 18446744073709552000,
+      "space": 21
+    },
+    "programData": null,
+    "executableFile": null,
+    "warning": null
+  }
+]

@@ -1,0 +1,14 @@
+node_modules/
+target/
+.env
+.env.*
+!.env.example
+repros/
+coverage/
+.superstack/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+artifacts/**/rpc-url.txt
+*.log

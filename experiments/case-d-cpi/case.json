@@ -1,0 +1,13 @@
+{
+  "case": "D/F",
+  "class": "pump-amm-defi-cpi",
+  "signature": "54b9hP8NQgRJmEss1SR4CnoNDJadymC7JavnKE773pF1WXGanrtpAX2grrd2tDPWEn9aDFiWcogYV9B46uHuVmpB",
+  "slot": 441308645,
+  "version": 0,
+  "accountCount": 24,
+  "computeUnitsConsumed": 87349,
+  "artifact": "artifacts/54b9hP8NQgRJmEss1SR4CnoNDJadymC7JavnKE773pF1WXGanrtpAX2grrd2tDPWEn9aDFiWcogYV9B46uHuVmpB",
+  "eligibility": "UNSUPPORTED_HISTORICAL_PRESTATE",
+  "blockingAccountCount": 2,
+  "result": "UNSUPPORTED"
+}

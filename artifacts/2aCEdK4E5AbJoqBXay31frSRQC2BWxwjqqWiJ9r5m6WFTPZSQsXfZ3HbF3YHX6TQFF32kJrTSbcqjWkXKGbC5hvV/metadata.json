@@ -1,0 +1,81 @@
+{
+  "signature": "2aCEdK4E5AbJoqBXay31frSRQC2BWxwjqqWiJ9r5m6WFTPZSQsXfZ3HbF3YHX6TQFF32kJrTSbcqjWkXKGbC5hvV",
+  "sourceCluster": "mainnet-beta",
+  "inspectedAt": "2026-08-24T03:49:08.325Z",
+  "rpcEndpointStored": false,
+  "slot": 441308645,
+  "blockTime": 1787543283,
+  "blockContext": {
+    "blockHeight": 419357649,
+    "blockTime": 1787543283,
+    "blockhash": "6X2NzQu51fnu4r76VvUPaGRfTG8h8B1HuMaHt6zMEE6j",
+    "parentSlot": 441308644,
+    "previousBlockhash": "48YrjPK4Ri3hwTTeoHpbQngw4xuhcdexRSQSAKDu9vGi"
+  },
+  "version": "legacy",
+  "err": null,
+  "fee": 650000,
+  "preBalances": [
+    754181066532,
+    48148706430,
+    1,
+    1
+  ],
+  "postBalances": [
+    754174338109,
+    48154784853,
+    1,
+    1
+  ],
+  "preTokenBalances": [],
+  "postTokenBalances": [],
+  "computeUnitsConsumed": 450,
+  "returnData": null,
+  "innerInstructions": [],
+  "loadedAddresses": {
+    "readonly": [],
+    "writable": []
+  },
+  "accountRoles": [
+    {
+      "index": 0,
+      "pubkey": "69SNcRC8NqjHBSXEcugCN5oFKRQoKmddmWzZYc3tqtxk",
+      "source": "static",
+      "signer": true,
+      "writable": true
+    },
+    {
+      "index": 1,
+      "pubkey": "BALCj4SEjBBBXGfeLB2nhLRCWT3XkqmXM1twc6mTxEWx",
+      "source": "static",
+      "signer": false,
+      "writable": true
+    },
+    {
+      "index": 2,
+      "pubkey": "ComputeBudget111111111111111111111111111111",
+      "source": "static",
+      "signer": false,
+      "writable": false
+    },
+    {
+      "index": 3,
+      "pubkey": "11111111111111111111111111111111",
+      "source": "static",
+      "signer": false,
+      "writable": false
+    }
+  ],
+  "programIds": [
+    "ComputeBudget111111111111111111111111111111",
+    "11111111111111111111111111111111"
+  ],
+  "addressTableLookups": [],
+  "historicalStateFinding": {
+    "getTransactionProvidesFullAccountDataPreState": false,
+    "getTransactionProvidesLamportPreState": true,
+    "getTransactionProvidesSelectedTokenAmountPreState": true,
+    "getAccountInfoAtArbitraryPastSlotStandardRpc": false,
+    "note": "minContextSlot is a lower bound on node context, not a historical-state selector"
+  }
+}

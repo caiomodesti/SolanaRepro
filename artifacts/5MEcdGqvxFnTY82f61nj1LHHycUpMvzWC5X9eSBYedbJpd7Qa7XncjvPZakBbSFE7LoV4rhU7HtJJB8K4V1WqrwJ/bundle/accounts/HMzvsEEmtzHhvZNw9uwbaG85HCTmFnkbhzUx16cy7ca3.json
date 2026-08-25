@@ -1,0 +1,28 @@
+{
+  "pubkey": "HMzvsEEmtzHhvZNw9uwbaG85HCTmFnkbhzUx16cy7ca3",
+  "originalIndex": 29,
+  "role": {
+    "index": 29,
+    "pubkey": "HMzvsEEmtzHhvZNw9uwbaG85HCTmFnkbhzUx16cy7ca3",
+    "source": "lookup-writable",
+    "signer": false,
+    "writable": true
+  },
+  "relevant": true,
+  "replayUse": false,
+  "preState": {
+    "lamports": 2985840,
+    "dataBase64": "8ZptBBGxbbz/AABgIUItjQr1+CADhbpDKXWeNMv0+txgpjWMUNHEwALUV5A/wMON7OVKMYfL8ynktw4j759KPmLd4QpahiiHGEc/BpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAFPkHPbGG27Y/elIiOUNY9RWl2UCsoqJZnR4X8FGSd5DHM/2EEQSemnxxBkuhtyVRKLr935QrqrfyA9LaJUZpiNNk5LF5do0LsfXcH4HCeTC7vgUfVoE1B8NEVubon9omJgsFCb1AMAALSFb+6r00jGDEMQAhMAGwP0uMO7JebA9TotTaz1YMW/AAEnRbAcBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+    "owner": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+    "executable": false,
+    "rentEpoch": 0
+  },
+  "limitations": [
+    "current account bytes cannot be treated as historical pre-state"
+  ],
+  "source": "current_rpc",
+  "provenance": "CURRENT_ONLY",
+  "evidence": [
+    "account observed at current RPC context, not at original slot 441308645"
+  ]
+}

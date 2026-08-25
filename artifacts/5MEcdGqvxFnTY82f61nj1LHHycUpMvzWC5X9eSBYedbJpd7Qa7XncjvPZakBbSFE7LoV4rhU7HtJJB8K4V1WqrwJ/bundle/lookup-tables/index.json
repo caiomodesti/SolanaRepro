@@ -1,0 +1,71 @@
+{
+  "descriptors": [
+    {
+      "accountKey": "5DLHwUSUpEBbWVieUmRRWNe3Eyvh895mf5MGkxZtYAvL",
+      "readonlyIndexes": [
+        2,
+        18,
+        142,
+        72,
+        90,
+        41,
+        93,
+        96,
+        91,
+        94,
+        26,
+        16,
+        38,
+        21,
+        109,
+        30
+      ],
+      "writableIndexes": [
+        87,
+        223,
+        89,
+        215,
+        105,
+        214,
+        219
+      ]
+    },
+    {
+      "accountKey": "13421UsXVmozpczk5UZVRHQgo5e5Sv9m76cVevRMbxtB",
+      "readonlyIndexes": [],
+      "writableIndexes": [
+        8,
+        12,
+        15
+      ]
+    },
+    {
+      "accountKey": "9TuXHSVtMVhARaTgJBHd3hBVpKW1jyUKVMWmW2Y6xv8M",
+      "readonlyIndexes": [
+        53
+      ],
+      "writableIndexes": [
+        52,
+        54,
+        57,
+        55
+      ]
+    },
+    {
+      "accountKey": "5P4vrgZQDUSputnUnrsGVjbX7maNufsjQnHqbQxiMH2n",
+      "readonlyIndexes": [],
+      "writableIndexes": [
+        23,
+        42,
+        39,
+        43,
+        20,
+        37,
+        21,
+        41,
+        19,
+        38
+      ]
+    }
+  ]
+}

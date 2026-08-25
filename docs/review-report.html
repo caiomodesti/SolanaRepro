@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SolanaRepro v0.1 Review</title>
+  <style>
+    :root{color-scheme:dark;--bg:#09100f;--panel:#111c19;--ink:#e8f3ef;--muted:#9eb3ac;--green:#5ee0a0;--amber:#f4c66a;--red:#ff7a7a;--line:#263b35}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 15% 0,#17352c 0,transparent 38%),var(--bg);color:var(--ink);font:15px/1.55 Inter,system-ui,sans-serif}.wrap{max-width:1120px;margin:auto;padding:54px 24px 80px}h1{font-size:clamp(36px,7vw,72px);line-height:1;margin:12px 0 18px;letter-spacing:-.055em}h2{margin:42px 0 14px;font-size:22px}.eyebrow{color:var(--green);font:700 12px/1.2 ui-monospace,monospace;letter-spacing:.15em;text-transform:uppercase}.lead{max-width:790px;color:#bed1ca;font-size:19px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:32px 0}.card,.finding{background:color-mix(in srgb,var(--panel) 92%,transparent);border:1px solid var(--line);border-radius:14px;padding:18px}.score{font-size:34px;font-weight:750;color:var(--green)}.label,.meta{color:var(--muted)}table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line)}th,td{text-align:left;padding:13px;border-bottom:1px solid var(--line)}th{color:var(--muted);font-size:12px;text-transform:uppercase}.pass{color:var(--green)}.warn{color:var(--amber)}.findings{display:grid;grid-template-columns:1fr 1fr;gap:12px}.finding b{display:block;margin-bottom:6px}.tag{display:inline-block;margin-top:10px;padding:3px 8px;border-radius:99px;background:#17352c;color:var(--green);font-size:12px}code{color:#b7f5d5}footer{margin-top:44px;color:var(--muted);border-top:1px solid var(--line);padding-top:18px}@media(max-width:760px){.grid{grid-template-columns:1fr 1fr}.findings{grid-template-columns:1fr}}
+  </style>
+</head>
+<body><main class="wrap">
+  <div class="eyebrow">Principal engineering review · v0.1.0 candidate</div>
+  <h1>Trust is the product.</h1>
+  <p class="lead">SolanaRepro is now structured as forensic transaction reproduction infrastructure: state discovery, provenance, eligibility, reconstruction, replay and deterministic comparison. It prefers an honest <code>UNSUPPORTED</code> over a misleading match.</p>
+  <section class="grid">
+    <div class="card"><div class="score">8.8</div><div class="label">Product thesis</div></div>
+    <div class="card"><div class="score">8.6</div><div class="label">Engineering</div></div>
+    <div class="card"><div class="score">8.4</div><div class="label">Security posture</div></div>
+    <div class="card"><div class="score">8.3</div><div class="label">Grant readiness</div></div>
+  </section>
+  <h2>Acceptance evidence</h2>
+  <table><thead><tr><th>Case</th><th>Local result</th><th>Trust basis</th></tr></thead><tbody>
+    <tr><td>System transfer</td><td class="pass">EXACT</td><td>Transaction-derived lamport pre-state</td></tr>
+    <tr><td>Classic SPL transfer</td><td class="pass">EXACT</td><td>Immutable token metadata reconstruction</td></tr>
+    <tr><td>Deterministic failure</td><td class="pass">EXACT</td><td>Exact rent error, logs, CUs and effects</td></tr>
+    <tr><td>ALT historical state</td><td class="warn">UNSUPPORTED</td><td>Missing defensible historical table/account state</td></tr>
+    <tr><td>Complex CPI</td><td class="warn">UNSUPPORTED</td><td>Program/account provenance incomplete</td></tr>
+  </tbody></table>
+  <h2>Material findings</h2>
+  <section class="findings">
+    <div class="finding"><b>Provider coupling</b>Capture directly depended on standard RPC semantics.<span class="tag">FIXED · HistoricalStateProvider</span></div>
+    <div class="finding"><b>False historical state risk</b>Present-day account bytes could contaminate replay claims.<span class="tag">FIXED · fail-closed provenance</span></div>
+    <div class="finding"><b>Bundle trust boundary</b>Spike artifacts lacked a portable integrity contract.<span class="tag">FIXED · schema, limits, SHA-256</span></div>
+    <div class="finding"><b>Remote evidence gap</b>A local baseline exists, but no remote or valid GitHub authentication is configured.<span class="tag" style="color:var(--amber)">OPEN · blocks release/READY</span></div>
+  </section>
+  <h2>Decision</h2>
+  <p><strong>Technically credible MVP candidate; release gate remains closed.</strong> Local behavior and evidence are strong enough for a grant narrative, but the repository cannot claim Definition of Done until the same corpus passes from a published commit in GitHub Actions.</p>
+  <footer>Generated 2026-08-25 · Local review artifact · Scores are engineering judgment, not external certification.</footer>
+</main></body></html>

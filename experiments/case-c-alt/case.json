@@ -1,0 +1,13 @@
+{
+  "case": "C",
+  "class": "v0-four-address-lookup-tables",
+  "signature": "5MEcdGqvxFnTY82f61nj1LHHycUpMvzWC5X9eSBYedbJpd7Qa7XncjvPZakBbSFE7LoV4rhU7HtJJB8K4V1WqrwJ",
+  "slot": 441308645,
+  "version": 0,
+  "accountCount": 61,
+  "lookupTableCount": 4,
+  "artifact": "artifacts/5MEcdGqvxFnTY82f61nj1LHHycUpMvzWC5X9eSBYedbJpd7Qa7XncjvPZakBbSFE7LoV4rhU7HtJJB8K4V1WqrwJ",
+  "eligibility": "UNSUPPORTED_HISTORICAL_PRESTATE",
+  "blockingAccountCount": 20,
+  "result": "UNSUPPORTED"
+}

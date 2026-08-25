@@ -1,0 +1,15 @@
+{
+  "pubkey": "11111111111111111111111111111111",
+  "originalIndex": 3,
+  "role": {
+    "index": 3,
+    "pubkey": "11111111111111111111111111111111",
+    "source": "static",
+    "signer": false,
+    "writable": false
+  },
+  "replayUse": false,
+  "confidence": "RUNTIME_BUILTIN",
+  "preState": null,
+  "limitations": []
+}

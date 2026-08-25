@@ -1,0 +1,10 @@
+{
+  "case": "E",
+  "class": "failed-system-transfer",
+  "signature": "mThLKQEAhXHzHxozzWm8ZnhX5YZoSprNfzV5zaMrRMh9UNweAYiwFNbNX2E5gfoWP5zu4pG5LrohSgb6awZ2mYo",
+  "slot": 441309952,
+  "artifact": "artifacts/mThLKQEAhXHzHxozzWm8ZnhX5YZoSprNfzV5zaMrRMh9UNweAYiwFNbNX2E5gfoWP5zu4pG5LrohSgb6awZ2mYo",
+  "eligibility": "SUPPORTED_WITH_ASSUMPTIONS",
+  "expectedError": "InsufficientFundsForRent{account_index:0}",
+  "result": "EXACT"
+}

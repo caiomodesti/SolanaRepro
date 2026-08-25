@@ -1,0 +1,51 @@
+{
+  "backend": "litesvm-rust",
+  "backendVersion": "0.15.2",
+  "success": false,
+  "error": "InsufficientFundsForRent { account_index: 0 }",
+  "logs": [
+    "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+    "Program ComputeBudget111111111111111111111111111111 success",
+    "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+    "Program ComputeBudget111111111111111111111111111111 success",
+    "Program 11111111111111111111111111111111 invoke [1]",
+    "Program 11111111111111111111111111111111 success"
+  ],
+  "computeUnitsConsumed": 450,
+  "returnData": null,
+  "postAccounts": [
+    {
+      "pubkey": "11111111111111111111111111111111",
+      "lamports": 1,
+      "owner": "NativeLoader1111111111111111111111111111111",
+      "executable": true,
+      "dataBase64": "c3lzdGVtX3Byb2dyYW0="
+    },
+    {
+      "pubkey": "BTmkLGp9Zfa6m88jJYEyJrgXpAjg2sSQU7q85sxy1V7T",
+      "lamports": 4403835940,
+      "owner": "11111111111111111111111111111111",
+      "executable": false,
+      "dataBase64": ""
+    },
+    {
+      "pubkey": "ComputeBudget111111111111111111111111111111",
+      "lamports": 1,
+      "owner": "NativeLoader1111111111111111111111111111111",
+      "executable": true,
+      "dataBase64": "Y29tcHV0ZV9idWRnZXRfcHJvZ3JhbQ=="
+    },
+    {
+      "pubkey": "D9SrrYGX9Qmw5k63kQ28p8ZtdFPQhp1gNwUxTHCS42Ly",
+      "lamports": 9996000,
+      "owner": "11111111111111111111111111111111",
+      "executable": false,
+      "dataBase64": ""
+    }
+  ],
+  "assumptions": [
+    "signature verification disabled because the original signed message is retained",
+    "blockhash age checking disabled because the original blockhash is historical",
+    "LiteSVM mainnet feature list is compiled into the selected backend version"
+  ]
+}

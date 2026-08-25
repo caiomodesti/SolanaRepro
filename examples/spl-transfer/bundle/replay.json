@@ -1,0 +1,55 @@
+{
+  "backend": "litesvm-rust",
+  "backendVersion": "0.15.2",
+  "success": true,
+  "error": null,
+  "logs": [
+    "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+    "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 200000 compute units",
+    "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success"
+  ],
+  "computeUnitsConsumed": 105,
+  "returnData": null,
+  "postAccounts": [
+    {
+      "pubkey": "2zR8aQiRMB5rgGGwRPvD1ArUhmFX9JpkaQVVKknR5EKD",
+      "lamports": 2039280,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "executable": false,
+      "dataBase64": "Bt324cWRALjdER2tKId8nPEkx90LHCCjL1KXCdu6X32mCaG9Pz+42jSkIvuXHWKaf7kcQKvGGPVBhvw2RwOaoPvaoh4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    {
+      "pubkey": "9EPDPhrQBMwzJSfYSDDj2JBC72aAUpErjSxSnsax6wkC",
+      "lamports": 2039280,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "executable": false,
+      "dataBase64": "Bt324cWRALjdER2tKId8nPEkx90LHCCjL1KXCdu6X31flIuLK6Y4W8lA5bquP75ZPYzbHmCbsADNH1+UOMW5VDTZIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    {
+      "pubkey": "Feed8SdBBh7NqD3gfnE8uzUan792SYihPpBVWHyYB69e",
+      "lamports": 8427041312,
+      "owner": "11111111111111111111111111111111",
+      "executable": false,
+      "dataBase64": ""
+    },
+    {
+      "pubkey": "Tokena1kQ2NyHt9yv7eFiZrGrL8U9RVW7wq8m5zjjR6",
+      "lamports": 1461600,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "executable": false,
+      "dataBase64": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+    },
+    {
+      "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "lamports": 1141440,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true,
+      "dataBase64": "AgAAACfxkLHTr5i4znFMROjK3/n4/EXLjl+sQgLv+BENl903"
+    }
+  ],
+  "assumptions": [
+    "signature verification disabled because the original signed message is retained",
+    "blockhash age checking disabled because the original blockhash is historical",
+    "LiteSVM mainnet feature list is compiled into the selected backend version"
+  ]
+}

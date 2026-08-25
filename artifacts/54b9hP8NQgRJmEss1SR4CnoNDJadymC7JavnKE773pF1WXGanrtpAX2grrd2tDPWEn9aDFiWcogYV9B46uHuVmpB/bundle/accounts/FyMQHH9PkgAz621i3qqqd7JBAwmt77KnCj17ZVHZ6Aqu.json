@@ -1,0 +1,28 @@
+{
+  "pubkey": "FyMQHH9PkgAz621i3qqqd7JBAwmt77KnCj17ZVHZ6Aqu",
+  "originalIndex": 4,
+  "role": {
+    "index": 4,
+    "pubkey": "FyMQHH9PkgAz621i3qqqd7JBAwmt77KnCj17ZVHZ6Aqu",
+    "source": "static",
+    "signer": false,
+    "writable": true
+  },
+  "relevant": true,
+  "replayUse": false,
+  "preState": {
+    "lamports": 76118650681,
+    "dataBase64": "BpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAHRIbjW7SdMYhkD4HV560eHznJpQsV0gvvtVdip1+IZ4AMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAADwHR8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+    "executable": false,
+    "rentEpoch": 0
+  },
+  "limitations": [
+    "current account bytes cannot be treated as historical pre-state"
+  ],
+  "source": "current_rpc",
+  "provenance": "CURRENT_ONLY",
+  "evidence": [
+    "account observed at current RPC context, not at original slot 441308645"
+  ]
+}

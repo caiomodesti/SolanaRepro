@@ -1,0 +1,9 @@
+{
+  "case": "A",
+  "class": "system-transfer",
+  "signature": "2aCEdK4E5AbJoqBXay31frSRQC2BWxwjqqWiJ9r5m6WFTPZSQsXfZ3HbF3YHX6TQFF32kJrTSbcqjWkXKGbC5hvV",
+  "slot": 441308645,
+  "artifact": "artifacts/2aCEdK4E5AbJoqBXay31frSRQC2BWxwjqqWiJ9r5m6WFTPZSQsXfZ3HbF3YHX6TQFF32kJrTSbcqjWkXKGbC5hvV",
+  "eligibility": "SUPPORTED_WITH_ASSUMPTIONS",
+  "result": "EXACT"
+}

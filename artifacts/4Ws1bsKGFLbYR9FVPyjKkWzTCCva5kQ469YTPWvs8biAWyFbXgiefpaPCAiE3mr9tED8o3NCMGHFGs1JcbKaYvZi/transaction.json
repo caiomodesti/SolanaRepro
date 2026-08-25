@@ -1,0 +1,50 @@
+{
+  "signature": "4Ws1bsKGFLbYR9FVPyjKkWzTCCva5kQ469YTPWvs8biAWyFbXgiefpaPCAiE3mr9tED8o3NCMGHFGs1JcbKaYvZi",
+  "rawBase64": "Aa/NlZpB6adAO+4iTg0aXriupSdZ/ZpN3MFxEfh+jlfSVOyhMyD0kRKEGNA4iPA/RekZ0fw5Nl8QX9LDfa+fNAWAAQACBJ3rOiC+nG1OgHT06j3QzBhukf+n8YMxyRxhsX1YoXK491AyR+JAtS2/x7cd4gHiOSNASqgVoWprN859mMCVwi4DBkZv5SEXMv/srbpyw5vnvIzlu8X3EmssQ5s6QAAAAAbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCp3lQKIiHUw23MK12daYH9xdKIbJ1CLs5mBbZiIT3bkB4DAgAFAts6AgACAAkDATMAAAAAAAADAwEAAAEJAA==",
+  "rawEncoding": "base64",
+  "rpcJson": {
+    "message": {
+      "accountKeys": [
+        "BdT3atARhgbSJdbJ6c1fvtN5ikFE3yqtoWktFv3cAcHM",
+        "HeQdPmb5u5CTEoQ9ZBbyZeVMwFcZVWomwBKCPG2iDNsP",
+        "ComputeBudget111111111111111111111111111111",
+        "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+      ],
+      "addressTableLookups": [],
+      "header": {
+        "numReadonlySignedAccounts": 0,
+        "numReadonlyUnsignedAccounts": 2,
+        "numRequiredSignatures": 1
+      },
+      "instructions": [
+        {
+          "accounts": [],
+          "data": "Kh5S5u",
+          "programIdIndex": 2,
+          "stackHeight": 1
+        },
+        {
+          "accounts": [],
+          "data": "3DfCND9ASLZV",
+          "programIdIndex": 2,
+          "stackHeight": 1
+        },
+        {
+          "accounts": [
+            1,
+            0,
+            0
+          ],
+          "data": "A",
+          "programIdIndex": 3,
+          "stackHeight": 1
+        }
+      ],
+      "recentBlockhash": "FxsqNN2BFqYsCJSB67aP86cEekVNoRZeuWxeLzdNUbaM"
+    },
+    "signatures": [
+      "4Ws1bsKGFLbYR9FVPyjKkWzTCCva5kQ469YTPWvs8biAWyFbXgiefpaPCAiE3mr9tED8o3NCMGHFGs1JcbKaYvZi"
+    ]
+  },
+  "version": 0
+}

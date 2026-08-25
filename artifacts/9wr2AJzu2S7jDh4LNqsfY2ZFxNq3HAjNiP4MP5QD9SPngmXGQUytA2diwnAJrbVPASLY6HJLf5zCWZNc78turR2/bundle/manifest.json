@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "experimental-0.1",
+  "sourceCluster": "mainnet-beta",
+  "originalSlot": 441309952,
+  "transactionSignature": "9wr2AJzu2S7jDh4LNqsfY2ZFxNq3HAjNiP4MP5QD9SPngmXGQUytA2diwnAJrbVPASLY6HJLf5zCWZNc78turR2",
+  "capturedAt": "2026-08-24T03:58:13.957Z",
+  "runtime": {
+    "backend": "litesvm-rust",
+    "version": "0.15.2",
+    "agaveFamily": "4.1.1"
+  },
+  "featureSet": {
+    "mode": "litesvm-compiled-mainnet-feature-set",
+    "historicalSlotPinned": false
+  },
+  "capturedAccounts": [
+    {
+      "pubkey": "CPgPrxLxuZnRKfccwWLQcPd1fQYFqvy58CsuBb5Zx6PZ",
+      "confidence": "EXACT_FOR_SYSTEM_EMPTY_DATA"
+    },
+    {
+      "pubkey": "D2hxozWuepFRh33MiYhk5qVfM7P2fhBUq2kz7TE1nMui",
+      "confidence": "CURRENT_WRITABLE_UNSAFE"
+    },
+    {
+      "pubkey": "DMeKLFxYWpCX4P6fnbtqA8wjPJVPpTpsZA2MbzsAEr9o",
+      "confidence": "INFERRED_TOKEN_AMOUNT_ON_CURRENT_LAYOUT"
+    },
+    {
+      "pubkey": "11111111111111111111111111111111",
+      "confidence": "RUNTIME_BUILTIN"
+    },
+    {
+      "pubkey": "2sFHPLb9tWWYRyGfsPBLrAp5tFNszAfcVQKzhjxMnm2p",
+      "confidence": "CURRENT_READONLY_ASSUMED_UNCHANGED"
+    },
+    {
+      "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+      "confidence": "RUNTIME_BUILTIN"
+    },
+    {
+      "pubkey": "ComputeBudget111111111111111111111111111111",
+      "confidence": "RUNTIME_BUILTIN"
+    },
+    {
+      "pubkey": "FL59Peqzuuo59NbPRiUbvB5AxJFDo4pLuTeYwEPYrCjw",
+      "confidence": "EXACT_FOR_SYSTEM_EMPTY_DATA"
+    },
+    {
+      "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "confidence": "RUNTIME_BUILTIN"
+    }
+  ],
+  "programs": [
+    {
+      "programId": "ComputeBudget111111111111111111111111111111",
+      "loader": "NativeLoader1111111111111111111111111111111",
+      "executableFile": null
+    },
+    {
+      "programId": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+      "loader": "BPFLoader2111111111111111111111111111111111",
+      "executableFile": null
+    },
+    {
+      "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executableFile": "programs/TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA.so"
+    },
+    {
+      "programId": "11111111111111111111111111111111",
+      "loader": "NativeLoader1111111111111111111111111111111",
+      "executableFile": null
+    }
+  ],
+  "lookupTables": [],
+  "replayEligibility": "UNSUPPORTED_HISTORICAL_PRESTATE",
+  "blockingAccounts": [
+    {
+      "pubkey": "D2hxozWuepFRh33MiYhk5qVfM7P2fhBUq2kz7TE1nMui",
+      "confidence": "CURRENT_WRITABLE_UNSAFE",
+      "limitations": [
+        "writable account data is current state; deterministic historical replay is not defensible"
+      ]
+    }
+  ],
+  "knownLimitations": [
+    "standard Solana RPC has no arbitrary historical getAccountInfo(slot)",
+    "captured program bytes are current bytes unless an external archival source proves otherwise",
+    "historical feature activation and all original sysvar values are not reconstructed",
+    "signature verification and recent blockhash age checks are disabled for replay"
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "generatedAt": "2026-08-24T04:06:43.264Z",
+  "pubkey": "69SNcRC8NqjHBSXEcugCN5oFKRQoKmddmWzZYc3tqtxk",
+  "originalSlot": 441308645,
+  "currentSlot": 441311700,
+  "slotDistance": 3055,
+  "probes": [
+    {
+      "label": "current",
+      "ok": true,
+      "response": {
+        "context": {
+          "apiVersion": "4.2.0",
+          "slot": 441311701
+        },
+        "value": {
+          "data": [
+            "",
+            "base64"
+          ],
+          "executable": false,
+          "lamports": 752983980975,
+          "owner": "11111111111111111111111111111111",
+          "rentEpoch": 18446744073709552000,
+          "space": 0
+        }
+      },
+      "fingerprint": {
+        "contextSlot": 441311701,
+        "lamports": 752983980975,
+        "owner": "11111111111111111111111111111111",
+        "executable": false,
+        "dataBase64": null
+      }
+    },
+    {
+      "label": "minContextSlot=original",
+      "ok": true,
+      "response": {
+        "context": {
+          "apiVersion": "4.2.0",
+          "slot": 441311703
+        },
+        "value": {
+          "data": [
+            "",
+            "base64"
+          ],
+          "executable": false,
+          "lamports": 752983980975,
+          "owner": "11111111111111111111111111111111",
+          "rentEpoch": 18446744073709552000,
+          "space": 0
+        }
+      },
+      "fingerprint": {
+        "contextSlot": 441311703,
+        "lamports": 752983980975,
+        "owner": "11111111111111111111111111111111",
+        "executable": false,
+        "dataBase64": null
+      }
+    },
+    {
+      "label": "nonstandard slot=original",
+      "ok": true,
+      "response": {
+        "context": {
+          "apiVersion": "4.2.0",
+          "slot": 441311703
+        },
+        "value": {
+          "data": [
+            "",
+            "base64"
+          ],
+          "executable": false,
+          "lamports": 752983980975,
+          "owner": "11111111111111111111111111111111",
+          "rentEpoch": 18446744073709552000,
+          "space": 0
+        }
+      },
+      "fingerprint": {
+        "contextSlot": 441311703,
+        "lamports": 752983980975,
+        "owner": "11111111111111111111111111111111",
+        "executable": false,
+        "dataBase64": null
+      }
+    },
+    {
+      "label": "minContextSlot=future",
+      "ok": false,
+      "error": "getAccountInfo: RPC -32016: Minimum context slot has not been reached",
+      "rpcError": {
+        "code": -32016,
+        "message": "Minimum context slot has not been reached",
+        "data": {
+          "contextSlot": 441311703
+        }
+      },
+      "fingerprint": null
+    }
+  ],
+  "conclusion": "standard getAccountInfo has no historical slot selector; minContextSlot constrains node freshness, not returned account version"
+}

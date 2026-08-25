@@ -1,0 +1,36 @@
+{
+  "pubkey": "5DLHwUSUpEBbWVieUmRRWNe3Eyvh895mf5MGkxZtYAvL",
+  "descriptor": {
+    "accountKey": "5DLHwUSUpEBbWVieUmRRWNe3Eyvh895mf5MGkxZtYAvL",
+    "readonlyIndexes": [
+      2,
+      18,
+      142,
+      72,
+      90,
+      41,
+      93,
+      96,
+      91,
+      94,
+      26,
+      16,
+      38,
+      21,
+      109,
+      30
+    ],
+    "writableIndexes": [
+      87,
+      223,
+      89,
+      215,
+      105,
+      214,
+      219
+    ]
+  },
+  "observed": null,
+  "confidence": "UNAVAILABLE",
+  "limitation": "standard RPC did not prove the ALT account bytes at the original slot"
+}

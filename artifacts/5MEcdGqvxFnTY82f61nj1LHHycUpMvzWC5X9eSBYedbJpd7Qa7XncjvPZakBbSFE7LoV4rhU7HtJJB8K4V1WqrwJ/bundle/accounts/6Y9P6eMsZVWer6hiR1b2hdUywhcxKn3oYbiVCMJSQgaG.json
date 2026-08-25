@@ -1,0 +1,28 @@
+{
+  "pubkey": "6Y9P6eMsZVWer6hiR1b2hdUywhcxKn3oYbiVCMJSQgaG",
+  "originalIndex": 32,
+  "role": {
+    "index": 32,
+    "pubkey": "6Y9P6eMsZVWer6hiR1b2hdUywhcxKn3oYbiVCMJSQgaG",
+    "source": "lookup-writable",
+    "signer": false,
+    "writable": true
+  },
+  "relevant": true,
+  "replayUse": false,
+  "preState": {
+    "lamports": 23385600,
+    "dataBase64": "i8KDs4yz5fQBAAAAAAAAAGQAAAAAAAAAZAAAAAAAAABXROjS////////////////MMKLagAAAACfwotqAAAAAMT959L///////////////+owotqAAAAAPjCi2oAAAAA36cT0/////////////////GLi2oAAAAAZ4yLagAAAACXPhPT////////////////goyLagAAAAD2jItqAAAAAIvkEtP////////////////6jItqAAAAAHGNi2oAAAAAM3wS0////////////////4GNi2oAAAAA942LagAAAAAXDhLT////////////////Eo6LagAAAACBjotqAAAAAO2mEdP///////////////+OjotqAAAAAAOPi2oAAAAAL24R0////////////////wqPi2oAAAAAS4+LagAAAACCoRDT////////////////2o+LagAAAABOkItqAAAAALcuENP///////////////9pkItqAAAAAN6Qi2oAAAAA59sP0////////////////+GQi2oAAAAARZGLagAAAAAsbw/T////////////////YpGLagAAAADKkYtqAAAAAIf9DtP////////////////okYtqAAAAAFaSi2oAAAAAHY4O0////////////////2+Si2oAAAAA4JKLagAAAAD6Lw7T////////////////65KLagAAAABVk4tqAAAAAIHBDdP///////////////9ok4tqAAAAAN+Ti2oAAAAAwEIN0////////////////waUi2oAAAAAfZSLagAAAABE7gzT////////////////fpSLagAAAADklItqAAAAAC5wDNP///////////////8KlYtqAAAAAH+Vi2oAAAAAiwwM0////////////////4OVi2oAAAAA+pWLagAAAADksgvT////////////////KpaLagAAAABolotqAAAAAI8aC9P///////////////+slotqAAAAACOXi2oAAAAAMt0K0////////////////yeXi2oAAAAAc5eLagAAAACMSQrT////////////////xpeLagAAAAA0mItqAAAAAFDoCdP///////////////9CmItqAAAAALOYi2oAAAAASHQJ0////////////////9aYi2oAAAAASpmLagAAAAC5/QjT////////////////pZmLagAAAADhmYtqAAAAABYMCNP///////////////+2motqAAAAABSbi2oAAAAApZUH0////////////////02bi2oAAAAAqpuLagAAAAAr8QbT////////////////GZyLagAAAAB7nItqAAAAAON/BtP///////////////+fnItqAAAAAAydi2oAAAAAhwkG0////////////////zCdi2oAAAAApJ2LagAAAACBtAXT////////////////rp2LagAAAAASnotqAAAAAEVFBdP///////////////8unotqAAAAAKSei2oAAAAAzeoE0////////////////6mei2oAAAAAHJ+LagAAAACDnQTT////////////////Jp+LagAAAACDn4tqAAAAAGIxBNP///////////////+un4tqAAAAABOgi2oAAAAAh+UD0////////////////yqgi2oAAAAAd6CLagAAAAB9cQPT////////////////o6CLagAAAAAPoYtqAAAAAOgRA9P///////////////8roYtqAAAAAIuhi2oAAAAAaqIC0////////////////8yhi2oAAAAAGaKLagAAAAAuBgLT////////////////b6KLagAAAADfootqAAAAABamAdP////////////////9ootqAAAAAFeji2oAAAAAPjsB0////////////////4Gji2oAAAAA3aOLagAAAADosgDT////////////////EqSLagAAAACJpItqAAAAAOZXANP///////////////+MpItqAAAAAPyki2oAAAAARksA0////////////////wyli2oAAAAADKWLagAAAAA1Xv/S////////////////x6WLagAAAAA5potqAAAAAEkq/9L///////////////8/potqAAAAAHumi2oAAAAAJeT+0v///////////////76mi2oAAAAA1KaLagAAAACOHv7S////////////////XqeLagAAAADQp4tqAAAAAK6z/dL////////////////xp4tqAAAAAFmoi2oAAAAA4C390v///////////////7Woi2oAAAAABqmLagAAAADlmvzS////////////////T6mLagAAAADFqYtqAAAAAJpC/NL////////////////LqYtqAAAAADmqi2oAAAAAVen70v///////////////0mqi2oAAAAAr6qLagAAAADNcPvS////////////////7qqLagAAAABOq4tqAAAAAGCN+tL///////////////8CrItqAAAAAHesi2oAAAAAikD60v///////////////3usi2oAAAAA2ayLagAAAABO5PnS////////////////9KyLagAAAABOrYtqAAAAAMlt+dL///////////////9srYtqAAAAAOKti2oAAAAA+wz50v///////////////+eti2oAAAAAWa6LagAAAABJpfjS////////////////eK6LagAAAADZrotqAAAAADNO+NL////////////////9rotqAAAAAEKvi2oAAAAAhGn30v///////////////9evi2oAAAAATrCLagAAAAAEFffS////////////////T7CLagAAAACysItqAAAAAIKn9tL////////////////HsItqAAAAADWxi2oAAAAAEmT20v///////////////0Cxi2oAAAAAhrGLagAAAAAm2PXS////////////////urGLagAAAAAusotqAAAAAC9m9dL///////////////9JsotqAAAAALWyi2oAAAAAVfX00v///////////////8qyi2oAAAAAPLOLagAAAAALffTS////////////////VbOLagAAAADMs4tqAAAAAEle9NL////////////////Os4tqAAAAAPGzi2oAAAAAy7Tz0v///////////////0m0i2oAAAAAwLSLagAAAABNmfPS////////////////yLSLagAAAADitItqAAAAAH388tL///////////////9FtYtqAAAAAKS1i2oAAAAAZFDy0v///////////////x22i2oAAAAAeLaLagAAAADszPHS////////////////o7aLagAAAAAZt4tqAAAAAPpv8dL///////////////8it4tqAAAAAIq3i2oAAAAAx8zw0v///////////////9e3i2oAAAAATriLagAAAAByZ/DS////////////////ULiLagAAAADDuItqAAAAAGf979L////////////////JuItqAAAAADy5i2oAAAAAfY/v0v///////////////0W5i2oAAAAAurmLagAAAADzHe/S////////////////2bmLagAAAAA7uotqAAAAAAOh7tL///////////////9VuotqAAAAAMe6i2oAAAAA0zPu0v///////////////826i2oAAAAAQbuLagAAAACnuO3S////////////////V7uLagAAAADOu4tqAAAAAC1x7dL////////////////Pu4tqAAAAACG8i2oAAAAAFPLs0v///////////////1e8i2oAAAAAt7yLagAAAADFa+zS////////////////7ryLagAAAABZvYtqAAAAAL4L7NL///////////////+QvYtqAAAAAM69i2oAAAAAQHDr0v///////////////xa+i2oAAAAAjb6LagAAAAAIEOvS////////////////kb6LagAAAAAIv4tqAAAAAE7e6tL///////////////8Ov4tqAAAAAEi/i2oAAAAAeEjq0v///////////////5e/i2oAAAAACsCLagAAAACB5unS////////////////MsCLagAAAACKwItqAAAAABxx6dL///////////////+7wItqAAAAACLBi2oAAAAAjwnp0v///////////////zTBi2oAAAAApsGLagAAAAAvsOjS////////////////rMGLagAAAAAXwotqAAAAAA==",
+    "owner": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+    "executable": false,
+    "rentEpoch": 0
+  },
+  "limitations": [
+    "current account bytes cannot be treated as historical pre-state"
+  ],
+  "source": "current_rpc",
+  "provenance": "CURRENT_ONLY",
+  "evidence": [
+    "account observed at current RPC context, not at original slot 441308645"
+  ]
+}

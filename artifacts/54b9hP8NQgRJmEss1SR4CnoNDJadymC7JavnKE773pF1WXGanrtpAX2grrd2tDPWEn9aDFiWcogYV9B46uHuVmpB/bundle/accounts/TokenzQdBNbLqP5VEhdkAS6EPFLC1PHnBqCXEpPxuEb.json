@@ -1,0 +1,20 @@
+{
+  "pubkey": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+  "originalIndex": 18,
+  "role": {
+    "index": 18,
+    "pubkey": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "source": "static",
+    "signer": false,
+    "writable": false
+  },
+  "relevant": true,
+  "replayUse": false,
+  "preState": null,
+  "limitations": [],
+  "source": "pinned_runtime",
+  "provenance": "PROVEN",
+  "evidence": [
+    "program id is supplied by the pinned LiteSVM runtime"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "pubkey": "2zR8aQiRMB5rgGGwRPvD1ArUhmFX9JpkaQVVKknR5EKD",
+  "originalIndex": 2,
+  "role": {
+    "index": 2,
+    "pubkey": "2zR8aQiRMB5rgGGwRPvD1ArUhmFX9JpkaQVVKknR5EKD",
+    "source": "static",
+    "signer": false,
+    "writable": true
+  },
+  "relevant": true,
+  "replayUse": true,
+  "preState": {
+    "lamports": 2039280,
+    "dataBase64": "Bt324cWRALjdER2tKId8nPEkx90LHCCjL1KXCdu6X32mCaG9Pz+42jSkIvuXHWKaf7kcQKvGGPVBhvw2RwOaoDsC+x0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+    "executable": false,
+    "rentEpoch": 0
+  },
+  "limitations": [
+    "unused classic SPL fields are normalized rather than recovered historically"
+  ],
+  "source": "inferred_from_transaction",
+  "provenance": "INFERRED",
+  "evidence": [
+    "mint, owner, amount and decimals come from preTokenBalances",
+    "initialized classic SPL layout follows the validated transfer class"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "pubkey": "7S777JCNPJEcY67UkUJE9vxcE15EwrSktS1rhVJYx6Lj",
+  "originalIndex": 1,
+  "role": {
+    "index": 1,
+    "pubkey": "7S777JCNPJEcY67UkUJE9vxcE15EwrSktS1rhVJYx6Lj",
+    "source": "static",
+    "signer": true,
+    "writable": false
+  },
+  "relevant": true,
+  "replayUse": false,
+  "preState": null,
+  "limitations": [],
+  "source": "transaction_metadata",
+  "provenance": "PROVEN",
+  "evidence": [
+    "message marks the authority as signer",
+    "no account existed before or after the transaction"
+  ]
+}

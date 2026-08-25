@@ -1,0 +1,62 @@
+{
+  "status": "EXACT",
+  "rulesVersion": "0.1",
+  "checks": {
+    "result": {
+      "match": true,
+      "original": false,
+      "replay": false
+    },
+    "error": {
+      "match": true,
+      "original": "InsufficientFundsForRent{account_index:0}",
+      "replay": "InsufficientFundsForRent{account_index:0}"
+    },
+    "logs": {
+      "exact": true,
+      "similarity": 1,
+      "originalLines": 6,
+      "replayLines": 6
+    },
+    "computeUnits": {
+      "exact": true,
+      "original": 450,
+      "replay": 450,
+      "differencePercent": 0
+    },
+    "postBalances": {
+      "exact": true,
+      "accounts": [
+        {
+          "pubkey": "BTmkLGp9Zfa6m88jJYEyJrgXpAjg2sSQU7q85sxy1V7T",
+          "expected": 4403835940,
+          "actual": 4403835940,
+          "exact": true
+        },
+        {
+          "pubkey": "D9SrrYGX9Qmw5k63kQ28p8ZtdFPQhp1gNwUxTHCS42Ly",
+          "expected": 9996000,
+          "actual": 9996000,
+          "exact": true
+        }
+      ]
+    },
+    "postTokenBalances": {
+      "exact": true,
+      "accounts": []
+    },
+    "innerInstructions": {
+      "exact": true
+    },
+    "returnData": {
+      "exact": true
+    }
+  },
+  "classificationRules": {
+    "EXACT": "result, error, logs, compute units, compared lamport/token post-balances, inner instructions and return data are exact",
+    "HIGH_FIDELITY": "result/error and inner instructions exact; log LCS similarity >= 0.95; CU difference <= 1%; compared lamport/token balances exact",
+    "PARTIAL": "result/error exact, but one or more fidelity signals miss high-fidelity thresholds",
+    "FAILED": "result or canonical transaction error differs",
+    "UNSUPPORTED": "bundle lacks defensible historical pre-state even if an attempted replay happens to match"
+  }
+}

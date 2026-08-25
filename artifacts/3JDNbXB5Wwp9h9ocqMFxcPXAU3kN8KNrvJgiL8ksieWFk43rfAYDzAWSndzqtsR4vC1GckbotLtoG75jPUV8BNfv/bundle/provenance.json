@@ -1,0 +1,154 @@
+{
+  "originalSlot": 441310827,
+  "policy": "CURRENT_ONLY and UNKNOWN relevant inputs make a bundle UNSUPPORTED",
+  "summary": {
+    "PROVEN": 3,
+    "INFERRED": 3,
+    "CURRENT_ONLY": 0,
+    "UNKNOWN": 0
+  },
+  "accounts": [
+    {
+      "pubkey": "Feed8SdBBh7NqD3gfnE8uzUan792SYihPpBVWHyYB69e",
+      "originalIndex": 0,
+      "role": {
+        "index": 0,
+        "pubkey": "Feed8SdBBh7NqD3gfnE8uzUan792SYihPpBVWHyYB69e",
+        "source": "static",
+        "signer": true,
+        "writable": true
+      },
+      "source": "transaction_metadata",
+      "provenance": "PROVEN",
+      "relevant": true,
+      "originalSlot": 441310827,
+      "capturedSlot": 441311122,
+      "evidence": [
+        "pre-transaction lamports come from getTransaction",
+        "System account data is structurally empty"
+      ],
+      "limitations": []
+    },
+    {
+      "pubkey": "7S777JCNPJEcY67UkUJE9vxcE15EwrSktS1rhVJYx6Lj",
+      "originalIndex": 1,
+      "role": {
+        "index": 1,
+        "pubkey": "7S777JCNPJEcY67UkUJE9vxcE15EwrSktS1rhVJYx6Lj",
+        "source": "static",
+        "signer": true,
+        "writable": false
+      },
+      "source": "transaction_metadata",
+      "provenance": "PROVEN",
+      "relevant": true,
+      "originalSlot": 441310827,
+      "capturedSlot": 441311122,
+      "evidence": [
+        "message marks the authority as signer",
+        "no account existed before or after the transaction"
+      ],
+      "limitations": []
+    },
+    {
+      "pubkey": "2zR8aQiRMB5rgGGwRPvD1ArUhmFX9JpkaQVVKknR5EKD",
+      "originalIndex": 2,
+      "role": {
+        "index": 2,
+        "pubkey": "2zR8aQiRMB5rgGGwRPvD1ArUhmFX9JpkaQVVKknR5EKD",
+        "source": "static",
+        "signer": false,
+        "writable": true
+      },
+      "source": "inferred_from_transaction",
+      "provenance": "INFERRED",
+      "relevant": true,
+      "originalSlot": 441310827,
+      "capturedSlot": 441311122,
+      "evidence": [
+        "mint, owner, amount and decimals come from preTokenBalances",
+        "initialized classic SPL layout follows the validated transfer class"
+      ],
+      "limitations": [
+        "unused classic SPL fields are normalized rather than recovered historically"
+      ]
+    },
+    {
+      "pubkey": "9EPDPhrQBMwzJSfYSDDj2JBC72aAUpErjSxSnsax6wkC",
+      "originalIndex": 3,
+      "role": {
+        "index": 3,
+        "pubkey": "9EPDPhrQBMwzJSfYSDDj2JBC72aAUpErjSxSnsax6wkC",
+        "source": "static",
+        "signer": false,
+        "writable": true
+      },
+      "source": "inferred_from_transaction",
+      "provenance": "INFERRED",
+      "relevant": true,
+      "originalSlot": 441310827,
+      "capturedSlot": 441311122,
+      "evidence": [
+        "mint, owner, amount and decimals come from preTokenBalances",
+        "initialized classic SPL layout follows the validated transfer class"
+      ],
+      "limitations": [
+        "unused classic SPL fields are normalized rather than recovered historically"
+      ]
+    },
+    {
+      "pubkey": "Tokena1kQ2NyHt9yv7eFiZrGrL8U9RVW7wq8m5zjjR6",
+      "originalIndex": 4,
+      "role": {
+        "index": 4,
+        "pubkey": "Tokena1kQ2NyHt9yv7eFiZrGrL8U9RVW7wq8m5zjjR6",
+        "source": "static",
+        "signer": false,
+        "writable": false
+      },
+      "source": "inferred_from_transaction",
+      "provenance": "INFERRED",
+      "relevant": true,
+      "originalSlot": 441310827,
+      "capturedSlot": 441311122,
+      "evidence": [
+        "mint address and decimals come from transaction metadata",
+        "initialized classic Mint layout is synthesized for TransferChecked"
+      ],
+      "limitations": [
+        "supply and authorities are normalized because TransferChecked does not consume them"
+      ]
+    },
+    {
+      "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "originalIndex": 5,
+      "role": {
+        "index": 5,
+        "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "source": "static",
+        "signer": false,
+        "writable": false
+      },
+      "source": "pinned_runtime",
+      "provenance": "PROVEN",
+      "relevant": true,
+      "originalSlot": 441310827,
+      "capturedSlot": 441311122,
+      "evidence": [
+        "program id is supplied by the pinned LiteSVM runtime"
+      ],
+      "limitations": []
+    }
+  ],
+  "programs": [
+    {
+      "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "source": "current_rpc_programdata",
+      "provenance": "CURRENT_ONLY",
+      "originalSlot": 441310827,
+      "capturedSlot": 441311123,
+      "limitation": "program bytes are current-state bytes, not proven bytes at original slot"
+    }
+  ],
+  "lookupTables": []
+}

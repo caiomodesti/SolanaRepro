@@ -1,0 +1,103 @@
+{
+  "success": false,
+  "status": "UNSUPPORTED",
+  "reason": "bundle is ineligible for evidence-grade replay",
+  "reasons": [
+    {
+      "code": "UNSUPPORTED_TRANSACTION_CLASS",
+      "message": "transaction is outside the explicit MVP allowlist",
+      "details": {}
+    },
+    {
+      "code": "UNSUPPORTED_ALT_HISTORICAL_STATE",
+      "message": "historical Address Lookup Table state is unavailable",
+      "details": {
+        "lookupTables": [
+          "5DLHwUSUpEBbWVieUmRRWNe3Eyvh895mf5MGkxZtYAvL",
+          "13421UsXVmozpczk5UZVRHQgo5e5Sv9m76cVevRMbxtB",
+          "9TuXHSVtMVhARaTgJBHd3hBVpKW1jyUKVMWmW2Y6xv8M",
+          "5P4vrgZQDUSputnUnrsGVjbX7maNufsjQnHqbQxiMH2n"
+        ]
+      }
+    },
+    {
+      "code": "UNSUPPORTED_ACCOUNT_PRESTATE",
+      "message": "one or more relevant accounts lack defensible pre-state",
+      "details": {
+        "accounts": [
+          "ojdNccFWWWoAuXAjBk7JyumefyrSEt5PLs3KgLwdrGu",
+          "2HRj9M3dXznabdungPjbtuof21QmDhBxxBGL7kvvVcWX",
+          "3AVi9Tg9Uo68tJfuvoKvqKNWKkC5wPdSSdeBnizKZ6jT",
+          "3Tf26g8rEZAtkN9C6Abgxk4XWqGTpqjSZQ6WC8DXvp48",
+          "3fAo2wmXaGkwSUfRjfKSwT3WjkrkfbYNZ13qGJatFejn",
+          "6dVwpapuAWBZtaiT6asXbksYAD62EsuceYxFYBuEwqSm",
+          "78JekrQc3g9KKkipwEeG6kV4Epq573R3Pd6GDE4Xz9Hv",
+          "89a8fwnhR3p35VAsgDJD7zi3xWZqXUK1iqXQVJEHAmV1",
+          "93sDRHSvMbEoGRSnxVhurp9Cvf6Fb22tS2uYv4ddTCNv",
+          "A6gom9Cu7xL7PkDf7yPX6NsMZwQr6cCDo7ufKGKGDoSg",
+          "CQ7GyroB4YC9dUTxDc8qqvpCyNX1GNh1NUnM2RERJ3ro",
+          "EPZxjPHEsS3WrgoH7hYi1aaffx8HhjkJEd5gUXDKfXN6",
+          "GA16RLe3an4ASqpviYpiDHEGEvZcLPAkXm12G9PbD6eh",
+          "GrWWfxBbNQxCf4PAvaji8HjksaVtX32yn8HgjWwY8yX7",
+          "8GCr9711iFUmGdW4vPGoBYHoLEACKHKY8aycYNuxViXk",
+          "ghSBUgyxyvyurm1vJBkU4rUyLJoUipCZhFeiBogKCSy",
+          "3FJcBrWULwgHxRfatfweWrqXosNaHEoQLeZkF14DsULu",
+          "94qWNrtmfn42h3ZjUZwWvK1MEo9uVmmrBPd2hpNjYDjb",
+          "AyC2GRoQApRdZ8dQEyDv5Di2kdTZqUwYqsuW6qxLWBtD",
+          "CA7v8gHfbquYXyDnDx6QxWW8hmL1H7X6Y2RYDrGLnuck",
+          "E1SvzUxEYWfE2NLZBMbNbEqxCWHBb8sfUNoTgPx93yro",
+          "FzH65994brAkqt2UrwMsovSTPAoXHmoSiQkpoNhWCqZV",
+          "4ezG1FgUrxDcpoQ2ZX6gfQoBWCGLAAd9inFinwvK4f2R",
+          "8ktMHvFCSq1JK7jBCQyojN29qkvMc7MaGKAT7PkvSKsS",
+          "HMzvsEEmtzHhvZNw9uwbaG85HCTmFnkbhzUx16cy7ca3",
+          "qhJ7kLjrE68sbDF11CpwMt3P9rqiwZtretM5ZzeAX6o",
+          "6V9njnehkfaoxUaoFPfBNfzS3DpqTfYLcuYFMAk7cNAZ",
+          "6Y9P6eMsZVWer6hiR1b2hdUywhcxKn3oYbiVCMJSQgaG",
+          "FZHyt9SnAbrmoCuRtawmxY7oWsYAVaDbHA9zwsppy32c",
+          "jyRYT9FBYZKEJ3o8Dfk1B9oA5Ah6aJe2nQe7nx9v6cf",
+          "27HFMsSEzvMByUtHGW3pPtrW4YvZPyytedA1hfhCte7d",
+          "4gBaHMTWdp9X5q6H95bE84Rw5XD9gmZgaQU69wafgK3g",
+          "5ha7nG6X4qTKBCveD9PRmaVzVFBtmkknTksk7i24vHh5",
+          "6w94mKJbM8GwKnbTZLcnpxS8BK12giE8tWtkH49nG3Ps",
+          "7EJqZHD4TTk8B9BCjUwLtfssGbxiDAsrbFHT8YWgrE7U",
+          "7jv3KTpMKEa8VVJfajRoK8CNH2LCPXnCXsVqgHAZTDu7",
+          "CNRDeeQZghziszXgtABMufoM4YkQeLz31jnmENFZLPC2",
+          "CcG3fyDZn6uXTV5p2TV9cceCA2YhE3bUMLeXGn6vZSNr",
+          "EkkgMLrSN4KKKvFVoFe3u72vHJS9U58X3roRBjysSsEu",
+          "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+          "MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr",
+          "So11111111111111111111111111111111111111112",
+          "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+          "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ",
+          "5PHirr8joyTMp9JMm6nW7hNDVyEYdkzDqazxPD7RaTjx",
+          "6AUH3WEHucYZyC61hqpqYUWVto5qA5hjHuNQ32GNnNxA",
+          "ADyA8hdefvWN2dbGGWFotbzWxrAvLW83WG6QCVXvJKqw",
+          "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+          "C2aFPdENg4A2HQsmrd5rTw5TaYBX5Ku887cWjbFKtZpw",
+          "EHAAiTxcdDwQ3U4bU6YcMsQGaekdzLS3B5SmYo46kJtL",
+          "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump"
+        ]
+      }
+    },
+    {
+      "code": "UNSUPPORTED_PROGRAM_PROVENANCE",
+      "message": "executed program bytes are not proven for the original slot",
+      "details": {
+        "programs": [
+          "8GCr9711iFUmGdW4vPGoBYHoLEACKHKY8aycYNuxViXk"
+        ]
+      }
+    },
+    {
+      "code": "UNSUPPORTED_UPGRADEABLE_PROGRAM_VERSION",
+      "message": "upgradeable program version at the original slot is not proven",
+      "details": {
+        "programs": [
+          "8GCr9711iFUmGdW4vPGoBYHoLEACKHKY8aycYNuxViXk"
+        ]
+      }
+    }
+  ]
+}

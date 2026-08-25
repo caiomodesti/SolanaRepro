@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "0.1",
+  "toolVersion": "0.1.0",
+  "cluster": "mainnet-beta",
+  "signature": "mThLKQEAhXHzHxozzWm8ZnhX5YZoSprNfzV5zaMrRMh9UNweAYiwFNbNX2E5gfoWP5zu4pG5LrohSgb6awZ2mYo",
+  "slot": 441309952,
+  "transactionClass": "SUPPORTED_DETERMINISTIC_FAILURE",
+  "eligibility": "SUPPORTED",
+  "eligibilityReasons": [],
+  "stateProvenance": {
+    "PROVEN": 4,
+    "INFERRED": 0,
+    "CURRENT_ONLY": 0,
+    "UNKNOWN": 0
+  },
+  "stateProvider": {
+    "name": "standard-rpc",
+    "capabilities": {
+      "transactionHistory": true,
+      "arbitraryHistoricalAccountState": false,
+      "historicalProgramBytes": false
+    },
+    "legacyCapture": true
+  },
+  "runtime": {
+    "backend": "LiteSVM",
+    "version": "0.15.2",
+    "agave": "4.1.1"
+  },
+  "featureSet": {
+    "mode": "litesvm-compiled-mainnet-feature-set",
+    "historicalSlotPinned": false
+  },
+  "capturedAt": "2026-08-24T03:57:09.344Z",
+  "knownLimitations": [
+    "standard Solana RPC has no arbitrary historical getAccountInfo(slot)",
+    "historical feature activations and sysvars are not reconstructed",
+    "signature verification and recent blockhash age checks are disabled only inside the local replay runtime"
+  ],
+  "integrity": {
+    "algorithm": "sha256",
+    "files": {
+      "README.md": "8dcb380fb70bca2918a8c23dfe7bd7302b1b426f46fb5db2a1760a99fa675716",
+      "accounts/11111111111111111111111111111111.json": "794fa0344d09be06733e0dc2c9d729da024cd5fb6e666df38d3a2b82bd5bf573",
+      "accounts/BTmkLGp9Zfa6m88jJYEyJrgXpAjg2sSQU7q85sxy1V7T.json": "1f5cfe6e0a8dd2e9096477e99b9b6446bf421dea7f55179b614536beefacada2",
+      "accounts/ComputeBudget111111111111111111111111111111.json": "e38077889591dc1646dce13712afcfa75f003f2067bb030d364015628ef8cccf",
+      "accounts/D9SrrYGX9Qmw5k63kQ28p8ZtdFPQhp1gNwUxTHCS42Ly.json": "a519779638aaadf5e2bd2933e9e5c8f88db8f0ea05556001244641f01eb789fe",
+      "expected.json": "660e0aff8968ddfd35bb36d711d999a3c364a7593defb3a0bcb0a59854efd9cf",
+      "lookup-tables/index.json": "cbc0553af307cde8a9fe202e4e365f7e5d302d07588dc9305b0635b79c21582b",
+      "original-execution.json": "7ced8f29e1884d4ee1298a2be14b14b03a126978db1da12dcc225e693c4b36ef",
+      "provenance.json": "ee7b18207916fcedc10985f9a8c1297975871748b256c93f474bdd9d0fb0752d",
+      "transaction.json": "d6c8123768d98b6cd3c5b34439897c8b13fc149251938dae7290fab4cd17bc5d"
+    },
+    "manifestCoreSha256": "776f642f3437f18f179cd9f3b9e1a0e0ad0254d25580923f1474bdd4dd2a415d"
+  }
+}

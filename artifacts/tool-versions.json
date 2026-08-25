@@ -1,0 +1,19 @@
+{
+  "capturedAt": "2026-08-24",
+  "host": "Windows x86_64",
+  "node": "22.17.0",
+  "npm": "10.9.2",
+  "javascriptDependencies": "none",
+  "rustBuildToolchain": "1.98.0 stable-x86_64-pc-windows-msvc",
+  "rustMinimumDeclared": "1.89",
+  "replayBackend": "LiteSVM 0.15.2",
+  "agaveRuntimeFamilyPinned": "4.1.1",
+  "observedMainnetRpcApiVersion": "4.2.0",
+  "strawberryPerl": "5.42.2.1",
+  "solanaCli": "not installed",
+  "anchorCliObserved": "1.0.2",
+  "notes": [
+    "The npm LiteSVM 1.3.0 package was rejected because no win32-x64-msvc native binding was published for this host.",
+    "LiteSVM 0.15.2 required exact Agave 4.1.1 internal crate pins; unconstrained semver resolved an incompatible Agave 4.2.1 mix."
+  ]
+}
