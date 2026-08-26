@@ -12,3 +12,5 @@ Thumbs.db
 .idea/
 artifacts/**/rpc-url.txt
 *.log
+codex-session.jsonl
+claude-session.jsonl

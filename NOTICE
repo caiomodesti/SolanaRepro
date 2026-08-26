@@ -1,0 +1,13 @@
+SolanaRepro
+Copyright 2026 SolanaRepro contributors
+
+This product includes a captured deployed binary of the classic SPL Token
+Program (program address TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA)
+solely as an immutable mainnet reproduction fixture.
+
+The upstream SPL Token program and clients are maintained at:
+https://github.com/solana-program/token
+
+The upstream project is distributed under the Apache License, Version 2.0.
+The captured binary remains attributable to its upstream authors. Inclusion as
+test evidence does not imply endorsement of SolanaRepro by the upstream project.

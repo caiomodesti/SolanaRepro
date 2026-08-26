@@ -1,0 +1,71 @@
+name: Independent technical review
+description: Report a reproducibility, provenance, comparison, security, or product-scope review of SolanaRepro.
+title: "[Independent review]: "
+labels:
+  - independent-review
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reviewing SolanaRepro. Do not include private RPC URLs, credentials, wallet secrets, or unrelated machine data.
+  - type: input
+    id: commit
+    attributes:
+      label: Commit or release
+      description: Exact SHA or release tag reviewed.
+      placeholder: v0.1.0 / full commit SHA
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, Node.js version, Rust version, and relevant build notes.
+    validations:
+      required: true
+  - type: textarea
+    id: commands
+    attributes:
+      label: Commands executed
+      description: Paste the exact commands used to install, build, test, and reproduce the finding.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: results
+    attributes:
+      label: Results
+      description: Include the aggregate test/corpus result and any unexpected behavior.
+    validations:
+      required: true
+  - type: dropdown
+    id: decision
+    attributes:
+      label: Review decision
+      options:
+        - GO
+        - CONDITIONAL GO
+        - NO-GO
+    validations:
+      required: true
+  - type: textarea
+    id: scorecard
+    attributes:
+      label: Scorecard and rationale
+      description: Score reproducibility, provenance integrity, comparator honesty, bundle security, documentation, and developer usefulness from 0 to 2.
+    validations:
+      required: true
+  - type: textarea
+    id: finding
+    attributes:
+      label: Material finding or minimal reproduction
+      description: Explain any false-positive, integrity bypass, mismatch, or misleading claim. Write "none found" if applicable.
+    validations:
+      required: true
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Public citation consent
+      options:
+        - label: I consent to this public issue being cited as an independent review. I understand that this does not imply endorsement beyond what I wrote.
+          required: false

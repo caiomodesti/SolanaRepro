@@ -2,7 +2,7 @@
 
 ## Reporting
 
-Do not open a public issue for a vulnerability that could enable bundle path escape, arbitrary code execution, integrity bypass, or a false `SUPPORTED`/`EXACT` result. Contact the maintainers privately with the affected version, reproduction steps, impact, and suggested remediation. No public security contact exists in this local checkout yet; one must be configured before public release.
+Do not open a public issue for a vulnerability that could enable bundle path escape, arbitrary code execution, integrity bypass, or a false `SUPPORTED`/`EXACT` result. Use [GitHub private vulnerability reporting](https://github.com/caiomodesti/SolanaRepro/security/advisories/new) with the affected version, reproduction steps, impact, and suggested remediation. Private vulnerability reporting is enabled for this repository.
 
 ## Threat model
 
@@ -18,5 +18,9 @@ Never put RPC credentials in a bundle or command committed to source control. Us
 
 ## Supported versions
 
-Only the current `0.1.x` development line is in scope. This repository has not yet published a security-supported release.
+| Version | Supported |
+| --- | --- |
+| `0.1.x` | Yes |
+| `< 0.1.0` | No |
 
+Security support covers the current source release. Prebuilt binaries and registry packages are not distributed in v0.1.0.

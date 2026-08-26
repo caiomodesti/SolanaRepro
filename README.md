@@ -33,7 +33,7 @@ The MVP does not support universal DeFi, complex CPI, ALT reconstruction, Token-
 
 ## Install
 
-Requirements: Node.js 22+, Rust stable, and a native build toolchain. Windows builds of the pinned Rust graph also require Perl.
+Requirements: Node.js 22+, Rust stable, and a native build toolchain. Windows uses the `stable-x86_64-pc-windows-msvc` toolchain and also requires a compatible Perl installation; the provided PowerShell script selects both explicitly.
 
 The first native Windows build compiles vendored OpenSSL and took approximately ten minutes in the recorded clean-clone test; cached builds are much faster.
 
@@ -43,6 +43,14 @@ cargo build --locked -p repro-replay
 npm link
 solrepro --version
 ```
+
+On Windows PowerShell, replace the generic Cargo build with:
+
+```powershell
+.\scripts\build-replay.ps1
+```
+
+Do not use the Windows GNU Rust host as an implicit substitute for the documented MSVC build. The vendored OpenSSL path handling differs between those environments.
 
 No npm runtime dependencies are used. LiteSVM `0.15.2` and Agave `4.1.1` are pinned in `Cargo.lock`.
 
@@ -109,6 +117,12 @@ Surfpool is primarily a local/fork development environment. SolanaRepro's produc
 SolanaRepro does not replace local execution tools. It turns real mainnet incidents into trusted inputs for them. The adoption path is intentionally CLI-first: `bug report → repro bundle → CI regression`.
 
 See [architecture](docs/architecture.md), [architecture options](docs/architecture-options.md), [limitations](docs/limitations.md), and [roadmap](docs/roadmap.md).
+
+## Independent review and project evaluation
+
+Start with the [one-page project brief](docs/project-brief.md), run the [two-minute deterministic demo](docs/demo-script.md), and use the [independent review protocol](docs/independent-review-guide.md) to publish a reproducible assessment. Reviews are most valuable when they challenge provenance, comparator honesty, bundle integrity, or the `SUPPORTED` boundary.
+
+The sequenced post-MVP work is tracked in the [execution plan](docs/execution-plan.md). Coverage expansion cannot bypass its evidence gates.
 
 ## Security and contributing
 
