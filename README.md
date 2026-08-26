@@ -112,6 +112,8 @@ historical transaction
 
 The provider boundary currently includes `StandardRpcProvider`, `FixtureProvider`, and `SnapshotProvider`. Future archive providers can implement the same contract without making the core vendor-specific. The standard RPC provider explicitly advertises that arbitrary historical account state is unavailable.
 
+The Phase 2 [HistoricalStateProvider contract](docs/historical-state-provider-contract.md) defines capability, source-identity, immutable-evidence, slot-semantics, and response-validation requirements for every future adapter. It does not make a transaction class supported by itself.
+
 Surfpool is primarily a local/fork development environment. SolanaRepro's product boundary is reproducibility: discovery, provenance, reconstruction, replay, comparison, and a portable forensic result. The VM is a replaceable backend, not the product.
 
 SolanaRepro does not replace local execution tools. It turns real mainnet incidents into trusted inputs for them. The adoption path is intentionally CLI-first: `bug report → repro bundle → CI regression`.

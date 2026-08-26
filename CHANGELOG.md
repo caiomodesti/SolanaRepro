@@ -4,6 +4,15 @@ All notable changes to SolanaRepro are documented in this file.
 
 The project follows Semantic Versioning for source releases. A source release does not imply that an npm package or prebuilt native binary was published.
 
+## [Unreleased]
+
+### Added
+
+- HistoricalStateProvider contract v0.1 with explicit account-state and slot-semantics capabilities.
+- Canonical SHA-256 immutable-source manifests for fixture and snapshot providers.
+- Provider and response conformance validation enforced by transaction inspection.
+- Fail-closed handling for missing manifests, tampered fixtures, missing accounts, source-type confusion, forged provenance, and slot mismatch.
+
 ## [0.1.0] - 2026-08-26
 
 ### Added

@@ -8,6 +8,8 @@ Ship capture, inspect, replay, compare, assert, Bundle v0.1, provenance policy, 
 
 Integrate and validate archive or snapshot providers behind `HistoricalStateProvider`. Each adapter must declare coverage, slot semantics, evidence origin, integrity guarantees, and failure behavior. No provider may silently fall back to current state.
 
+Current foundation: provider contract v0.1, canonical immutable-source manifests for fixtures/snapshots, and core-enforced response conformance. A production snapshot parser and archive-provider adapter remain unimplemented.
+
 ## Phase 3 — Public benchmark
 
 Publish a reproducible corpus of approximately 100 real transactions and report `EXACT`, `SEMANTIC_MATCH`, `PARTIAL`, and `UNSUPPORTED` rates. Preserve transaction-class and provider breakdowns so aggregate numbers cannot hide weak coverage.
