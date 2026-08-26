@@ -4,6 +4,15 @@ import { encodeBase58 } from "./base58.js";
 import { PROGRAMS } from "./constants.js";
 import { ensureDir, resolveArtifactDir, writeJson, writeText } from "./io.js";
 import { StandardRpcProvider } from "./historical-state-provider.js";
+import {
+  assertProviderConformance,
+  validateAccountStateResponse,
+  validateSingleAccountStateResponse,
+} from "./provider-contract.js";
+
+function requireConformingResponse(validation) {
+  if (!validation.valid) throw new TypeError(`non-conforming HistoricalStateProvider response: ${validation.errors.join("; ")}`);
+}
 
 function unwrapAccountKey(key) {
   return typeof key === "string" ? key : key?.pubkey;
@@ -79,6 +88,10 @@ async function collectPrograms(provider, ids, accountMap, originalSlot, artifact
     let executableBytes = null;
     if (programDataAddress) {
       const response = await provider.getAccountAtSlot(programDataAddress, originalSlot);
+      requireConformingResponse(validateSingleAccountStateResponse(provider, response, {
+        pubkey: programDataAddress,
+        slot: originalSlot,
+      }));
       programData = { pubkey: programDataAddress, capturedAtSlot: response.capturedAtSlot, provenance: response.provenance, account: response.account };
       if (response.account?.data?.[0]) {
         const raw = Buffer.from(response.account.data[0], "base64");
@@ -107,6 +120,7 @@ async function collectPrograms(provider, ids, accountMap, originalSlot, artifact
 
 export async function inspectTransaction(signature, { rpcUrl, options = {}, provider: suppliedProvider }) {
   const provider = suppliedProvider || new StandardRpcProvider(rpcUrl);
+  assertProviderConformance(provider);
   const artifactDir = path.resolve(options.out || resolveArtifactDir(signature));
   await ensureDir(artifactDir);
 
@@ -120,6 +134,10 @@ export async function inspectTransaction(signature, { rpcUrl, options = {}, prov
   const roles = rolesForKeys(jsonTx, keys);
   const ids = programIds(jsonTx, keys.allKeys);
   const accounts = await provider.getAccountsAtSlot(keys.allKeys, jsonTx.slot);
+  requireConformingResponse(validateAccountStateResponse(provider, accounts, {
+    pubkeys: keys.allKeys,
+    slot: jsonTx.slot,
+  }));
   const accountMap = new Map(accounts.values.map(({ pubkey, account }) => [pubkey, account]));
   const programs = await collectPrograms(provider, ids, accountMap, jsonTx.slot, artifactDir);
   const lookups = jsonTx.transaction.message.addressTableLookups || [];
@@ -134,6 +152,12 @@ export async function inspectTransaction(signature, { rpcUrl, options = {}, prov
         apiVersions: [],
         values: [],
       };
+  if (lookupAddresses.length) {
+    requireConformingResponse(validateAccountStateResponse(provider, lookupAccounts, {
+      pubkeys: lookupAddresses,
+      slot: jsonTx.slot,
+    }));
+  }
   let block = null;
   try {
     block = await provider.getBlock(jsonTx.slot);
@@ -146,7 +170,7 @@ export async function inspectTransaction(signature, { rpcUrl, options = {}, prov
     sourceCluster: "mainnet-beta",
     inspectedAt: new Date().toISOString(),
     rpcEndpointStored: false,
-    historicalStateProvider: { name: provider.name, capabilities: provider.capabilities },
+    historicalStateProvider: provider.describe(),
     slot: jsonTx.slot,
     blockTime: jsonTx.blockTime,
     blockContext: block,

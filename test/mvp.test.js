@@ -9,6 +9,7 @@ import { runtimeCompatibility, evaluateEligibility } from "../src/eligibility.js
 import { normalizeBundlePath } from "../src/integrity.js";
 import { readJson } from "../src/io.js";
 import { FixtureProvider, HistoricalStateProvider, SnapshotProvider, StandardRpcProvider } from "../src/historical-state-provider.js";
+import { createImmutableSourceManifest } from "../src/provider-contract.js";
 import { createBundle } from "../src/bundle.js";
 
 const signatures = {
@@ -30,11 +31,20 @@ test("historical state providers declare capabilities and preserve provenance", 
 
   const pubkey = "11111111111111111111111111111111";
   const account = { lamports: 1, owner: pubkey, data: ["", "base64"], executable: false, rentEpoch: 0 };
-  const fixture = new FixtureProvider({ accounts: { [`42:${pubkey}`]: account } });
+  const fixtureContent = { accounts: { [`42:${pubkey}`]: account } };
+  const fixture = new FixtureProvider({
+    ...fixtureContent,
+    manifest: createImmutableSourceManifest(fixtureContent, { sourceId: "mvp-test" }),
+  });
   const result = await fixture.getAccountsAtSlot([pubkey], 42);
   assert.equal(result.provenance, "PROVEN");
   assert.deepEqual(result.values[0].account, account);
-  assert.equal(new SnapshotProvider().name, "snapshot");
+  const snapshotContent = { accounts: {} };
+  const snapshot = new SnapshotProvider({
+    ...snapshotContent,
+    manifest: createImmutableSourceManifest(snapshotContent, { sourceType: "snapshot", sourceId: "empty-snapshot" }),
+  });
+  assert.equal(snapshot.name, "snapshot");
 });
 
 test("standard RPC provider labels minContextSlot account observations CURRENT_ONLY", async () => {
@@ -43,12 +53,16 @@ test("standard RPC provider labels minContextSlot account observations CURRENT_O
     rpcClient: {
       async call(method, params) {
         calls.push({ method, params });
-        return { context: { slot: 50, apiVersion: "test" }, value: [null] };
+        return {
+          context: { slot: 50, apiVersion: "test" },
+          value: [{ lamports: 1, owner: "11111111111111111111111111111111", data: ["", "base64"], executable: false }],
+        };
       },
     },
   });
   const result = await provider.getAccountsAtSlot(["11111111111111111111111111111111"], 42);
   assert.equal(result.provenance, "CURRENT_ONLY");
+  assert.equal(result.values[0].provenance, "CURRENT_ONLY");
   assert.equal(calls[0].params[1].minContextSlot, 42);
   assert.match(result.semantics, /NOT historical/);
 });

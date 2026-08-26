@@ -16,6 +16,8 @@ HistoricalStateProvider
 
 `StandardRpcProvider` is the MVP capture adapter. `FixtureProvider` and `SnapshotProvider` establish the extension seam and support deterministic tests. No commercial archive provider is integrated in v0.1.
 
+Phase 2 adds a versioned [provider conformance contract](historical-state-provider-contract.md). Exact historical capability requires source identity, immutable evidence, and exact slot semantics. The core validates provider declarations and account responses before bundle construction; an invalid manifest or response fails closed.
+
 ## Trust flow
 
 1. Capture the immutable wire transaction and execution metadata.

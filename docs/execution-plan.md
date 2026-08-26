@@ -38,6 +38,15 @@ Exit gate:
 
 Target: 2026-09-11 to 2026-10-08
 
+Foundation completed on the Phase 2 development branch on 2026-08-26:
+
+- provider capability and slot-semantics contract;
+- canonical immutable-source manifests for fixtures and snapshots;
+- core-enforced provider and account-response conformance;
+- adversarial coverage for missing/tampered sources, missing accounts, forged provenance, slot mismatch, and post-validation mutation.
+
+Still pending: production snapshot parsing, archive-provider feasibility/integration, and real historical-provider corpus evidence.
+
 Work:
 
 - Publish a provider capability and conformance contract.
