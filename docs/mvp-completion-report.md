@@ -57,7 +57,7 @@ The global `npm` shim on this machine points to a missing roaming npm module. Th
 
 ## 8. Did CI actually pass on GitHub?
 
-**No.** A local baseline commit is being prepared, but this checkout has no configured remote. `gh auth status` reports an invalid token. The workflow is implemented but has not run remotely. No remote-CI badge or success claim is justified.
+**Yes.** Commit `1abbdf330117efad2d538aaeb7fefa1a773d91dc` was published to the public repository at `https://github.com/caiomodesti/SolanaRepro`. GitHub Actions run [`32924089225`](https://github.com/caiomodesti/SolanaRepro/actions/runs/32924089225) completed successfully on `ubuntu-latest` in 2m33s. The run passed dependency installation, the locked Rust workspace tests, the pinned replay build, and `npm run test:ci`.
 
 ## 9. Do the public examples work?
 
@@ -68,20 +68,20 @@ Yes locally. Each example contains its mainnet signature, explanation, Bundle v0
 - Standard RPC cannot return arbitrary account bytes at an original slot.
 - Historical feature activation, sysvars, program deployments, and validator binary are not generally reconstructed.
 - Archive-provider and production snapshot parsers are architectural follow-ons, not MVP integrations.
-- A clean Windows clone is proven; Linux behavior still awaits the remote GitHub Actions run.
+- A clean Windows clone and a published Linux GitHub Actions run are proven. This is not a claim of support for every operating system or toolchain.
 - Bundle hashes provide integrity, not creator authentication.
 - The public benchmark is three supported examples, not a coverage-rate claim.
 
 ## 11. Is the project ready for v0.1.0?
 
-The code and local evidence form a credible v0.1.0 **release candidate**, but release is blocked by the explicit gate requiring a published commit and real GitHub Actions pass. No tag or package should be published yet.
+The code and evidence satisfy the v0.1.0 MVP engineering gate: a cloneable public commit exists and the complete workflow passed remotely. It is **release-ready**, but no tag or package has been published; release publication remains a separate maintainer action.
 
 ## 12. Is it technically ready for a grant application?
 
-**Conditional yes.** The problem, thesis, architecture, exact examples, negative evidence, security posture, roadmap, and measurable local results are technically grant-ready. A submission should wait for a public repository URL and remote CI evidence so reviewers can reproduce the claims from a clean checkout.
+**Yes, technically.** The problem, thesis, architecture, exact examples, negative evidence, security posture, roadmap, public repository, and reproducible Windows/Linux evidence are grant-ready. This does not substitute for program-specific eligibility, adoption, or external-review evidence.
 
 ## Final decision
 
-**MVP NOT READY**
+**MVP READY**
 
-Objective reason: every local engineering acceptance criterion is satisfied, but the Master Prompt's Definition of Done explicitly requires GitHub CI passing remotely and a cloneable repository. Neither can be proven without a configured remote and valid GitHub authentication.
+Objective reason: every scoped engineering acceptance criterion is satisfied, the repository is publicly cloneable, and the complete CI corpus passed on a published commit. Archive state, ALT, complex CPI, DeFi, and broader historical coverage remain explicitly outside this MVP.

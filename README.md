@@ -1,5 +1,7 @@
 # SolanaRepro
 
+[![replay-regressions](https://github.com/caiomodesti/SolanaRepro/actions/workflows/ci.yml/badge.svg)](https://github.com/caiomodesti/SolanaRepro/actions/workflows/ci.yml)
+
 **Open-source forensic transaction reproduction infrastructure for Solana.**
 
 SolanaRepro reconstructs the historical context that can be defended, replays a transaction locally, and measures equivalence against its original mainnet execution. Its first major use case is portable regression testing.
@@ -85,7 +87,7 @@ The comparator evaluates result/error, normalized logs, compute units, writable 
 npm run test:ci
 ```
 
-The GitHub workflow builds the pinned Rust runner, runs unit/integrity/adversarial tests, proves three supported examples as `EXACT`, and verifies explicit ALT/CPI rejection. Local success is not represented as remote GitHub success; see the [completion report](docs/mvp-completion-report.md).
+The GitHub workflow builds the pinned Rust runner, runs unit/integrity/adversarial tests, proves three supported examples as `EXACT`, and verifies explicit ALT/CPI rejection. The first published Linux run passed from commit `1abbdf3`; see the [workflow run](https://github.com/caiomodesti/SolanaRepro/actions/runs/32924089225) and [completion report](docs/mvp-completion-report.md).
 
 ## Architecture
 

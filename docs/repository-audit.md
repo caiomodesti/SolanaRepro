@@ -28,4 +28,4 @@ ALT replay, complex CPI/DeFi, Token-2022, archive-provider integration, runtime 
 
 ## Residual debt
 
-The local baseline is committed on `codex/solanarepro-v0.1` and a clean Windows clone has passed installation, cold build, and the full corpus. No remote is configured, GitHub authentication is not usable, and Linux/remote CI therefore cannot be verified. The snapshot adapter is an architectural seam rather than a production snapshot parser. JSON schema is published as documentation while runtime validation uses explicit code; a schema-validator dependency was intentionally avoided for MVP.
+The local baseline is committed on `codex/solanarepro-v0.1`; a clean Windows clone passed installation, cold build, and the full corpus. The public `main` branch at `caiomodesti/SolanaRepro` also passed the full Linux workflow in GitHub Actions run `32924089225`. The snapshot adapter remains an architectural seam rather than a production snapshot parser. JSON schema is published as documentation while runtime validation uses explicit code; a schema-validator dependency was intentionally avoided for MVP. No release tag or registry package has been published.

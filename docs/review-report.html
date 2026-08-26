@@ -31,9 +31,9 @@
     <div class="finding"><b>Provider coupling</b>Capture directly depended on standard RPC semantics.<span class="tag">FIXED · HistoricalStateProvider</span></div>
     <div class="finding"><b>False historical state risk</b>Present-day account bytes could contaminate replay claims.<span class="tag">FIXED · fail-closed provenance</span></div>
     <div class="finding"><b>Bundle trust boundary</b>Spike artifacts lacked a portable integrity contract.<span class="tag">FIXED · schema, limits, SHA-256</span></div>
-    <div class="finding"><b>Remote evidence gap</b>A local baseline exists, but no remote or valid GitHub authentication is configured.<span class="tag" style="color:var(--amber)">OPEN · blocks release/READY</span></div>
+    <div class="finding"><b>Remote evidence gate</b>The public commit passed the complete Linux corpus in GitHub Actions.<span class="tag">CLOSED · run 32924089225</span></div>
   </section>
   <h2>Decision</h2>
-  <p><strong>Technically credible MVP candidate; release gate remains closed.</strong> Local behavior and evidence are strong enough for a grant narrative, but the repository cannot claim Definition of Done until the same corpus passes from a published commit in GitHub Actions.</p>
+  <p><strong>MVP READY; release-ready but not released.</strong> The scoped local behavior is backed by clean-clone Windows evidence and a successful published Linux GitHub Actions run. Broader historical coverage remains governed by the explicit <code>UNSUPPORTED</code> boundary.</p>
   <footer>Generated 2026-08-25 · Local review artifact · Scores are engineering judgment, not external certification.</footer>
 </main></body></html>
