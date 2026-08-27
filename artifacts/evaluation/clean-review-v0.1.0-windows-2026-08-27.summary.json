@@ -1,0 +1,37 @@
+{
+  "schema": "solanarepro-clean-review-summary/v1",
+  "relationship": "maintainer-run",
+  "target": "v0.1.0",
+  "resolvedCommit": "12dd8f85465097a4e1f0917d1de3e8d116afb1da",
+  "startedAt": "2026-08-27T03:29:35.844Z",
+  "finishedAt": "2026-08-27T03:41:42.979Z",
+  "environment": {
+    "platform": "win32",
+    "architecture": "x64",
+    "node": "v22.17.0",
+    "npm": "10.9.2",
+    "rustc": "rustc 1.97.1 (8bab26f4f 2026-07-14)",
+    "cargo": "cargo 1.97.1 (c980f4866 2026-06-30)",
+    "rustToolchain": "stable-x86_64-pc-windows-msvc"
+  },
+  "cleanStart": {
+    "gitWorktreeClean": true,
+    "nodeModulesAbsent": true,
+    "targetDirectoryAbsent": true
+  },
+  "results": {
+    "systemTransfer": "EXACT",
+    "classicSplTransfer": "EXACT",
+    "deterministicFailure": "EXACT",
+    "altHistoricalState": "UNSUPPORTED",
+    "complexCpiProvenance": "UNSUPPORTED",
+    "rustTests": "PASS",
+    "nodeTestsPassed": 19,
+    "nodeTestsFailed": 0
+  },
+  "timeToFirstRegressionMs": 723520,
+  "totalDurationMs": 729656,
+  "outcome": "PASS",
+  "fullLocalReportSha256": "1eb06d963f695b62cde95e38170664f45b0b36288c7f5d1b991cffa77f782319",
+  "disclosure": "Privacy-safe maintainer summary derived from the ignored machine-generated report. It is reproducibility evidence, not an independent review. The full report contains local filesystem paths and is retained outside Git."
+}

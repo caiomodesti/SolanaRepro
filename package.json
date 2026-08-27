@@ -16,6 +16,7 @@
     "replay": "node src/cli.js replay",
     "compare": "node src/cli.js compare",
     "assert": "node src/cli.js assert",
+    "review:clean": "node scripts/measure-clean-review.js",
     "test": "node --test",
     "regression": "node scripts/run-regressions.js",
     "test:ci": "node --test && node scripts/run-regressions.js"

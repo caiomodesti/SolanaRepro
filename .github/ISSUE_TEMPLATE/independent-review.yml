@@ -38,6 +38,14 @@ body:
       description: Include the aggregate test/corpus result and any unexpected behavior.
     validations:
       required: true
+  - type: textarea
+    id: clean_measurement
+    attributes:
+      label: Clean-install measurement
+      description: Paste the JSON report or provide a link. State "manual path" if the harness was not used. Remove secrets or unrelated machine data before publishing.
+      render: json
+    validations:
+      required: true
   - type: dropdown
     id: decision
     attributes:

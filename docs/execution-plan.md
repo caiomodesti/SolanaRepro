@@ -22,6 +22,12 @@ Exit gate:
 
 Target: 2026-08-28 to 2026-09-10
 
+Maintainer dry-run completed on the isolated external-evaluation branch on
+2026-08-27: a clean temporary clone of immutable `v0.1.0` passed the cold native
+build, Rust tests, all five corpus classifications, and 19/19 Node tests. Time
+to first completed regression was 12m03.520s and total duration was 12m09.656s.
+This validates the measurement path; it is not an independent review.
+
 Work:
 
 - Ask at least three independent Solana/runtime/security reviewers to run the published protocol.
