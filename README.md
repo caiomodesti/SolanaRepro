@@ -122,6 +122,11 @@ See [architecture](docs/architecture.md), [architecture options](docs/architectu
 
 Start with the [one-page project brief](docs/project-brief.md), run the [two-minute deterministic demo](docs/demo-script.md), and use the [independent review protocol](docs/independent-review-guide.md) to publish a reproducible assessment. Reviews are most valuable when they challenge provenance, comparator honesty, bundle integrity, or the `SUPPORTED` boundary.
 
+To measure a genuinely empty install of the published release and produce a
+shareable JSON result, run `npm run review:clean`. The harness uses a temporary
+clone of `v0.1.0`; it does not treat the current working tree or an existing
+native build cache as clean-install evidence.
+
 The sequenced post-MVP work is tracked in the [execution plan](docs/execution-plan.md). Coverage expansion cannot bypass its evidence gates.
 
 ## Security and contributing

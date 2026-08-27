@@ -15,6 +15,38 @@ Record the commit SHA and environment used. Do not review an uncommitted working
 
 ## Standard reproduction path
 
+### Measured clean-clone path
+
+From any clone containing the review harness, run the command below. It creates
+a separate temporary clone of the immutable `v0.1.0` tag, installs and builds
+from empty dependency/build directories, runs the regression corpus followed by
+the Node tests, and writes a machine-readable report under `review-results/`.
+
+```bash
+npm run review:clean
+```
+
+If the global npm launcher is unavailable but Node.js is installed, invoke the
+same dependency-free harness directly:
+
+```bash
+node scripts/measure-clean-review.js
+```
+
+The report records the resolved commit, environment versions, exact command
+sequence, per-step exit codes and durations, clean-start checks, total duration,
+and time from dependency installation to the first completed regression run.
+Command output is bounded to its final 24,000 characters per stream. Inspect it
+before publishing and never add private RPC URLs, credentials, wallet material,
+or unrelated environment data.
+
+Use `npm run review:clean -- --keep-workspace` when a failure requires inspection.
+The preserved temporary clone path and report path are printed at the end. A
+non-zero harness exit means the measurement failed; it must not be counted as a
+successful clean install.
+
+### Manual path
+
 ```bash
 git clone https://github.com/caiomodesti/SolanaRepro.git
 cd SolanaRepro
@@ -97,6 +129,7 @@ Open an [independent review issue](https://github.com/caiomodesti/SolanaRepro/is
 - commit and operating system;
 - commands executed;
 - raw aggregate result;
+- the clean-review JSON report, when the measured path was used;
 - scorecard;
 - any minimal reproduction for a finding;
 - whether you consent to the review being cited publicly.

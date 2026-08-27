@@ -5,6 +5,7 @@ target/
 !.env.example
 repros/
 coverage/
+review-results/
 .superstack/
 .DS_Store
 Thumbs.db
