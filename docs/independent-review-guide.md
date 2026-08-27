@@ -36,6 +36,11 @@ node scripts/measure-clean-review.js
 The report records the resolved commit, environment versions, exact command
 sequence, per-step exit codes and durations, clean-start checks, total duration,
 and time from dependency installation to the first completed regression run.
+The default `v0.1.0` target is pinned to full commit
+`12dd8f85465097a4e1f0917d1de3e8d116afb1da`; a different resolution fails before
+installation. Custom refs require `--expected-commit` with a full 40-character
+SHA. A dirty checkout or pre-existing `node_modules`/`target` directory also
+fails the preflight rather than being recorded as a successful clean run.
 Command output is bounded to its final 24,000 characters per stream. Inspect it
 before publishing and never add private RPC URLs, credentials, wallet material,
 or unrelated environment data.

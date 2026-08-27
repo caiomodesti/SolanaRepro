@@ -125,7 +125,9 @@ Start with the [one-page project brief](docs/project-brief.md), run the [two-min
 To measure a genuinely empty install of the published release and produce a
 shareable JSON result, run `npm run review:clean`. The harness uses a temporary
 clone of `v0.1.0`; it does not treat the current working tree or an existing
-native build cache as clean-install evidence.
+native build cache as clean-install evidence. It pins the release to its full
+commit and fails before installation if the target resolves differently or the
+clone is not genuinely empty.
 
 The sequenced post-MVP work is tracked in the [execution plan](docs/execution-plan.md). Coverage expansion cannot bypass its evidence gates.
 

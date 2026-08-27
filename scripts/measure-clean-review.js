@@ -10,6 +10,9 @@ import { spawnSync } from "node:child_process";
 const REPORT_SCHEMA = "solanarepro-clean-review/v1";
 const DEFAULT_TARGET = "v0.1.0";
 const MAX_CAPTURED_OUTPUT = 24_000;
+const PINNED_TARGETS = Object.freeze({
+  "v0.1.0": "12dd8f85465097a4e1f0917d1de3e8d116afb1da",
+});
 
 function usage() {
   return `Usage: node scripts/measure-clean-review.js [options]
@@ -19,6 +22,7 @@ machine-readable timing/result report.
 
 Options:
   --target <git-ref>       Release tag or commit to review (default: v0.1.0)
+  --expected-commit <sha>  Required full SHA for an unrecognized target
   --output <path>          Report path (default: review-results/<timestamp>.json)
   --keep-workspace         Preserve the temporary clone for investigation
   --help                   Show this help
@@ -26,21 +30,43 @@ Options:
 }
 
 export function parseArgs(argv) {
-  const options = { target: DEFAULT_TARGET, output: null, keepWorkspace: false, help: false };
+  const options = {
+    target: DEFAULT_TARGET,
+    expectedCommit: null,
+    output: null,
+    keepWorkspace: false,
+    help: false,
+  };
   for (let index = 0; index < argv.length; index += 1) {
     const argument = argv[index];
     if (argument === "--help" || argument === "-h") options.help = true;
     else if (argument === "--keep-workspace") options.keepWorkspace = true;
-    else if (argument === "--target" || argument === "--output") {
+    else if (argument === "--target" || argument === "--expected-commit" || argument === "--output") {
       const value = argv[index + 1];
       if (!value || value.startsWith("--")) throw new Error(`${argument} requires a value`);
-      options[argument.slice(2)] = value;
+      const optionKey = {
+        "--target": "target",
+        "--expected-commit": "expectedCommit",
+        "--output": "output",
+      }[argument];
+      options[optionKey] = value;
       index += 1;
     } else {
       throw new Error(`Unknown option: ${argument}`);
     }
   }
+  options.expectedCommit = resolveExpectedCommit(options.target, options.expectedCommit);
+  if (!options.help && !options.expectedCommit) {
+    throw new Error(`--expected-commit is required for unrecognized target ${options.target}`);
+  }
   return options;
+}
+
+export function resolveExpectedCommit(target, suppliedCommit = null) {
+  const candidate = suppliedCommit ?? PINNED_TARGETS[target] ?? (/^[0-9a-f]{40}$/i.test(target) ? target : null);
+  if (candidate === null) return null;
+  if (!/^[0-9a-f]{40}$/i.test(candidate)) throw new Error("--expected-commit must be a full 40-character Git SHA");
+  return candidate.toLowerCase();
 }
 
 export function outputTail(value, limit = MAX_CAPTURED_OUTPUT) {
@@ -58,6 +84,27 @@ export function platformInvocation(
     return { executable: nodePath, args: [npmCli, ...args] };
   }
   return { executable: command, args };
+}
+
+export function evaluatePreflight({
+  resolvedCommit,
+  expectedCommit,
+  statusExitCode,
+  statusOutput,
+  nodeModulesAbsent,
+  targetDirectoryAbsent,
+}) {
+  const checks = {
+    resolvedCommitMatches: resolvedCommit?.toLowerCase() === expectedCommit?.toLowerCase(),
+    gitStatusSucceeded: statusExitCode === 0,
+    gitWorktreeClean: statusExitCode === 0 && statusOutput === "",
+    nodeModulesAbsent,
+    targetDirectoryAbsent,
+  };
+  const reasons = Object.entries(checks)
+    .filter(([, passed]) => !passed)
+    .map(([name]) => name);
+  return { ok: reasons.length === 0, checks, reasons };
 }
 
 function commandResult(command, args, cwd, { stream = true } = {}) {
@@ -134,12 +181,29 @@ async function main() {
     steps.push(commandResult("git", ["clone", "--no-local", "--branch", options.target, "--depth", "1", repositoryRoot, reviewRoot], repositoryRoot));
     if (!failedStep(steps)) {
       const statusBefore = commandResult("git", ["status", "--porcelain"], reviewRoot, { stream: false });
-      const cleanAtStart = statusBefore.exitCode === 0 && statusBefore.stdoutTail === "";
+      const resolvedCommit = version("git", ["rev-parse", "HEAD"], reviewRoot);
       const nodeModulesAbsentAtStart = !existsSync(resolve(reviewRoot, "node_modules"));
       const targetDirectoryAbsentAtStart = !existsSync(resolve(reviewRoot, "target"));
+      const preflight = evaluatePreflight({
+        resolvedCommit,
+        expectedCommit: options.expectedCommit,
+        statusExitCode: statusBefore.exitCode,
+        statusOutput: statusBefore.stdoutTail,
+        nodeModulesAbsent: nodeModulesAbsentAtStart,
+        targetDirectoryAbsent: targetDirectoryAbsentAtStart,
+      });
+      steps.push({
+        command: ["solrepro-clean-review-preflight"],
+        durationMs: 0,
+        exitCode: preflight.ok ? 0 : 1,
+        signal: null,
+        error: preflight.ok ? null : `Preflight failed: ${preflight.reasons.join(", ")}`,
+        stdoutTail: JSON.stringify(preflight.checks),
+        stderrTail: preflight.ok ? "" : preflight.reasons.join("\n"),
+      });
       const installStartedAt = Date.now();
 
-      steps.push(commandResult("npm", ["ci", "--ignore-scripts"], reviewRoot));
+      if (!failedStep(steps)) steps.push(commandResult("npm", ["ci", "--ignore-scripts"], reviewRoot));
       if (!failedStep(steps)) {
         if (process.platform === "win32") {
           steps.push(commandResult("powershell.exe", ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "scripts/build-replay.ps1"], reviewRoot));
@@ -159,11 +223,14 @@ async function main() {
       }
       if (!failedStep(steps)) steps.push(commandResult("npm", ["test"], reviewRoot));
 
-      const resolvedCommit = version("git", ["rev-parse", "HEAD"], reviewRoot);
       report = {
         schema: REPORT_SCHEMA,
         target: options.target,
         resolvedCommit,
+        targetIntegrity: {
+          expectedCommit: options.expectedCommit,
+          matchesExpectedCommit: preflight.checks.resolvedCommitMatches,
+        },
         startedAt: startedAt.toISOString(),
         finishedAt: new Date().toISOString(),
         environment: {
@@ -175,7 +242,7 @@ async function main() {
           cargo: version("cargo", ["--version"], reviewRoot),
         },
         cleanStart: {
-          gitWorktreeClean: cleanAtStart,
+          gitWorktreeClean: preflight.checks.gitWorktreeClean,
           nodeModulesAbsent: nodeModulesAbsentAtStart,
           targetDirectoryAbsent: targetDirectoryAbsentAtStart,
         },
