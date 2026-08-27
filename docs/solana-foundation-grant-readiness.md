@@ -64,8 +64,8 @@ stated plainly in the `Relevant metrics` answer.
   tooling and does not deploy a program, token or project fee-payer wallet)
 - Funding category: `Developer Tooling`
 - Open source: `Yes`
-- Recommended provisional request: `$30,000 USD`, subject to applicant approval
-  and final milestone costing
+- Recommended provisional request: `$10,000 USD`, optimized for a narrow first
+  Foundation grant rather than the full roadmap
 
 ## Applicant inputs still required
 
@@ -75,7 +75,7 @@ stated plainly in the `Relevant metrics` answer.
 - Telegram and/or X contact.
 - Relevant personal delivery history, Solana experience and any recognized
   hackathon work.
-- Confirmation or revision of the provisional `$30,000 USD` request.
+- Confirmation of the conservative `$10,000 USD` request.
 
 ## Privacy boundary
 

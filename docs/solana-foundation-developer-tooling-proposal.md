@@ -21,7 +21,7 @@ SolanaRepro
 
 **Total Amount Requested (USD)**
 
-$30,000 (provisional; applicant confirmation required)
+$10,000 (conservative first-grant request; applicant confirmation required)
 
 **Relevant Experience & Track Record**
 
@@ -135,57 +135,51 @@ acceptance criteria already ordered by the project execution plan.
 
 ## 4a. Completed First Version (Beta) — per component
 
-**Milestone 1 — Production historical-state providers — $6,000**
+**Milestone 1 — Production historical-state provider evidence — $3,000**
 
 Target: 2026-10-08.
 
-Deliver a production snapshot parser and one archive-provider reference adapter
-behind the existing vendor-neutral contract. Every response must expose source
-identity and slot semantics. Missing or unverifiable history must produce
-`UNSUPPORTED`. Acceptance requires immutable-source validation, adversarial
-tests and at least ten real historical-state cases, including negative cases.
-No vendor integration qualifies if real slot-specific account state cannot be
-validated.
+Deliver a production snapshot parser plus an evidence-backed feasibility
+evaluation of one archive provider behind the existing vendor-neutral contract.
+Every response must expose source identity and slot semantics. Missing or
+unverifiable history must produce `UNSUPPORTED`. Acceptance requires
+immutable-source validation, adversarial tests and at least ten real historical
+state cases, including negative cases. An archive adapter is included only if
+real slot-specific account state can be independently validated; otherwise the
+public rejection report and preserved `UNSUPPORTED` boundary are the required
+result.
 
-**Milestone 2 — Public approximately 100-transaction benchmark — $5,000**
+**Milestone 2 — First public 25-transaction benchmark slice — $2,000**
+
+Target: 2026-10-31.
+
+Publish a reproducibly selected and deduplicated first slice of 25 real mainnet
+transactions. For every case, publish transaction class, provider, provenance
+class, runtime, fidelity result, structured reason and replay time. The
+benchmark must preserve the denominator and report `EXACT`,
+`SEMANTIC_MATCH`, `PARTIAL` and `UNSUPPORTED` separately using machine-generated
+classification rules. This is a funded intermediate slice of the existing
+approximately 100-transaction roadmap, not a reduction of the final target.
+
+**Milestone 3 — Reviewed v0.2 production release — $1,000**
 
 Target: 2026-11-20.
 
-Publish a reproducibly selected and deduplicated corpus of approximately 100
-real mainnet transactions. For every case, publish transaction class, provider,
-provenance class, runtime, fidelity result, structured reason and replay time.
-The benchmark must preserve the denominator and report `EXACT`,
-`SEMANTIC_MATCH`, `PARTIAL` and `UNSUPPORTED` separately using machine-generated
-classification rules.
+Publish v0.2 with provider-contract documentation, the 25-case benchmark slice,
+at least two reproducible independent technical reviews, release provenance and
+a documented response process for an incorrect `SUPPORTED` classification.
+This milestone may not claim universal transaction reproduction and cannot
+complete with an unresolved critical finding or known false-positive supported
+outcome.
 
-**Milestone 3 — Portable release and regression Action — $4,000**
-
-Target: 2026-12-18.
-
-Publish CI-generated CLI artifacts for supported operating systems, checksums,
-release provenance and smoke tests; stabilize the bundle pack/verify workflow;
-and publish a reusable GitHub Action for regression assertions. Unsupported
-platforms must be explicit. Acceptance requires clean-machine verification
-without compiling the native backend on every supported platform.
-
-**Milestone 4 — v1 evidence and response policy — $5,000**
-
-Target: 2027-01-15.
-
-Publish the stable provider contract, bundle migration policy, measured
-corpus-bounded coverage, at least two independent technical reviews, and a
-documented response process for an incorrect `SUPPORTED` classification. This
-milestone may not claim universal transaction reproduction and cannot complete
-with a known false-positive supported outcome.
-
-Beta/product-development subtotal: **$20,000**.
+Beta/product-development subtotal: **$6,000**.
 
 ## 4b. Maintenance — minimum 6 months
 
-Maintenance period: 2027-01-16 through 2027-07-15.
+Maintenance period: 2026-11-21 through 2027-05-20.
 
-Total maintenance budget: **$6,000**, paid as six monthly milestones of
-**$1,000**.
+Total maintenance budget: **$2,400**, paid as six monthly milestones of
+**$400**.
 
 Each month includes public issue triage, reproducible bug investigation,
 security and integrity fixes, dependency advisories, CI/release maintenance,
@@ -196,36 +190,35 @@ published response window.
 
 ## 4c. User Adoption
 
-Adoption subtotal: **$4,000**. Metrics are opt-in and publicly verifiable; no
+Adoption subtotal: **$1,600**. Metrics are opt-in and publicly verifiable; no
 private repository analytics or fabricated activity will be counted.
 
-**Adoption milestone A — Independent reproducibility — $2,000**
+**Adoption milestone A — Independent reproducibility — $800**
 
-Target: at least 20 successful third-party clean-review or bundle-reproduction
-reports from at least five independent identities by 2027-07-15. Reports must
+Target: at least eight successful third-party clean-review or bundle-reproduction
+reports from at least four independent identities by 2027-05-20. Reports must
 name the immutable release/commit, environment and machine-verifiable result.
-For each 25% of the target reached, 25% of this milestone becomes eligible.
+Every two valid reports (25% of target) unlock 25% of this milestone.
 
-**Adoption milestone B — Project integrations — $2,000**
+**Adoption milestone B — Project integrations — $800**
 
-Target: at least four independent public Solana repositories using a verified
-SolanaRepro bundle or the regression GitHub Action in CI by 2027-07-15. Each
+Target: at least two independent public Solana repositories using a verified
+SolanaRepro bundle or regression assertion in CI by 2027-05-20. Each
 integration must link to a public workflow/run and a real incident or regression
-case. For each integration (25% of target), 25% becomes eligible.
+case. Each verified integration unlocks 50% of this milestone.
 
 ## Milestone Summary Table
 
 | # | Milestone / Deliverable | Success Criteria | Amount (USD) |
 | --- | --- | --- | ---: |
-| 1 | Production historical-state providers | Snapshot parser, reference archive adapter, adversarial tests and >=10 real cases with fail-closed semantics | $6,000 |
-| 2 | Public benchmark | Approximately 100 deduplicated real cases with machine-generated classifications and preserved denominator | $5,000 |
-| 3 | Portable distribution | CI-built artifacts, checksums, smoke tests, pack/verify and reusable GitHub Action | $4,000 |
-| 4 | v1 evidence and response policy | Stable contracts, migrations, >=2 independent reviews, measured coverage and zero known false-positive support outcomes | $5,000 |
-| 5-10 | Six monthly maintenance milestones | Public monthly log and issue/security/release maintenance | $6,000 |
-| 11 | Independent reproducibility adoption | 20 valid reports from >=5 independent identities, paid proportionally per 25% | $2,000 |
-| 12 | Public project integrations | Four public CI integrations, paid proportionally per 25% | $2,000 |
+| 1 | Production historical-state provider evidence | Snapshot parser, archive feasibility evidence, adversarial tests and >=10 real cases with fail-closed semantics | $3,000 |
+| 2 | First public benchmark slice | 25 deduplicated real cases with machine-generated classifications and preserved denominator | $2,000 |
+| 3 | Reviewed v0.2 production release | Provider docs, benchmark slice, >=2 independent reviews, release provenance and response policy | $1,000 |
+| 4-9 | Six monthly maintenance milestones | Public monthly log and issue/security/release maintenance | $2,400 |
+| 10 | Independent reproducibility adoption | Eight valid reports from >=4 independent identities | $800 |
+| 11 | Public project integrations | Two public CI regression integrations | $800 |
 
-**Total: $30,000 USD.**
+**Total: $10,000 USD.**
 
 # 5. Acknowledgements
 
